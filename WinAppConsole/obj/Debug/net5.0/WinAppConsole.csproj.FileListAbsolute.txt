@@ -1,0 +1,16 @@
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\bin\Debug\net5.0\WinAppConsole.exe
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\bin\Debug\net5.0\WinAppConsole.deps.json
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\bin\Debug\net5.0\WinAppConsole.runtimeconfig.json
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\bin\Debug\net5.0\WinAppConsole.runtimeconfig.dev.json
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\bin\Debug\net5.0\WinAppConsole.dll
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\bin\Debug\net5.0\ref\WinAppConsole.dll
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\bin\Debug\net5.0\WinAppConsole.pdb
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.csproj.AssemblyReference.cache
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.AssemblyInfoInputs.cache
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.AssemblyInfo.cs
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.csproj.CoreCompileInputs.cache
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.dll
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\ref\WinAppConsole.dll
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.pdb
+D:\CSTP 2104 - Windows Interactive Programming\Notes\WinAppConsole\obj\Debug\net5.0\WinAppConsole.genruntimeconfig.cache
