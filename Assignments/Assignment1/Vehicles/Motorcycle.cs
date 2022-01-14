@@ -12,31 +12,35 @@ namespace Assignment.Assignment1.Vehicles
     {
         public Motorcycle(MotorcycleEngine engine, MotorcycleModel model, MotorcycleTrim trim, MotorcycleMake make, int year, decimal price, int mileage, bool USvehicle, VehicleType type = VehicleType.Motorcycle) : base(type, year, price, mileage, USvehicle)
         {
-            Engine = engine;
-            Model = model;
-            Make = make;
-            Trim = trim;
+            _Engine = engine;
+            _Model = model;
+            _Make = make;
+            _Trim = trim;
         }
+        private MotorcycleEngine _Engine;
+        private MotorcycleModel _Model;
+        private MotorcycleTrim _Trim;
+        private MotorcycleMake _Make;
         public MotorcycleEngine Engine
         {
-            get { return Engine; }
-            set { Engine = value; }
+            get { return _Engine; }
+            set { _Engine = value; }
         }
         public MotorcycleModel Model
         {
-            get { return Model; }
-            set { Model = value; }
+            get { return _Model; }
+            set { _Model = value; }
         }
         public MotorcycleTrim Trim
         {
-            get { return Trim; }
-            set { Trim = value; }
+            get { return _Trim; }
+            set { _Trim = value; }
         }
         public MotorcycleMake Make
         {
-            get { return Make; }
-            set { Make = value; }
+            get { return _Make; }
+            set { _Make = value; }
         }
     }
 }
-}
+

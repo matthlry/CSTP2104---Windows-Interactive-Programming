@@ -12,30 +12,34 @@ namespace Assignment.Assignment1.Vehicles
     {
         public Car(CarEngine engine, CarModel model, CarTrim trim, CarMake make, int year, decimal price, int mileage, bool USvehicle, VehicleType type = VehicleType.Car) : base(type, year, price, mileage, USvehicle)
         {
-            Engine = engine;
-            Model = model;
-            Make = make;
-            Trim = trim;
+            _Engine = engine;
+            _Model = model;
+            _Make = make;
+            _Trim = trim;
         }
+        private CarEngine _Engine;
+        private CarModel _Model;
+        private CarTrim _Trim;
+        private CarMake _Make;
         public CarEngine Engine
         {
-            get { return Engine; }
-            set { Engine = value; }
+            get { return _Engine; }
+            set { _Engine = value; }
         }
         public CarModel Model
         {
-            get { return Model; }
-            set { Model = value; }
+            get { return _Model; }
+            set { _Model = value; }
         }
         public CarTrim Trim
         {
-            get { return Trim; }
-            set { Trim = value; }
+            get { return _Trim; }
+            set { _Trim = value; }
         }
         public CarMake Make
         {
-            get { return Make; }
-            set { Make = value; }
+            get { return _Make; }
+            set { _Make = value; }
         }
     }
 }

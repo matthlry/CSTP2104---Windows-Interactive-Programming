@@ -11,9 +11,9 @@ namespace Assignment.Assignment1
     {
         public Vehicle(VehicleType type, int year, decimal price, int mileage, bool USvehicle)
         {
-            Type = type;
-            Year = year;
-            Price = price;
+            _Type = type;
+            _Year = year;
+            _Price = price;
             _Mileage = mileage;
             if (USvehicle == true)
             {
@@ -27,23 +27,26 @@ namespace Assignment.Assignment1
 
         protected int _Mileage;
         protected MileageType _MileageType;
+        protected VehicleType _Type;
+        protected int _Year;
+        protected decimal _Price;
 
         public VehicleType Type
         {
-            get { return Type; }
-            set { Type = value; }
+            get { return _Type; }
+            set { _Type = value; }
         }
 
         public int Year
         {
-            get { return Year; }
-            set { Year = value; }
+            get { return _Year; }
+            set { _Year = value; }
         }
 
         public decimal Price
         {
-            get { return Price; }
-            set { Price = value; }
+            get { return _Price; }
+            set { _Price = value; }
         }
 
         public string Mileage

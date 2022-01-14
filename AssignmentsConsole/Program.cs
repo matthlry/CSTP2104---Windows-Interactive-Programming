@@ -1,4 +1,5 @@
 ﻿using System;
+using Assignment.Assignment1;
 
 namespace AssignmentsConsole
 {
@@ -6,7 +7,8 @@ namespace AssignmentsConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Test1.AddCarTest();
+            Test1.CheckCarInventory();
         }
     }
 }

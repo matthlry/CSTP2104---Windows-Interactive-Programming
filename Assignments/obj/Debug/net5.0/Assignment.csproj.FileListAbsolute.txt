@@ -1,0 +1,12 @@
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.csproj.AssemblyReference.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfoInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfo.cs
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.csproj.CoreCompileInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.deps.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\ref\Assignment.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\ref\Assignment.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.pdb
