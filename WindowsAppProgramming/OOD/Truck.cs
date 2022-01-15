@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace WindowsAppLib.OOD
 {
-    public class Truck
+    public class Truck : Car
     {
+        public decimal capacity;
+
     }
 }

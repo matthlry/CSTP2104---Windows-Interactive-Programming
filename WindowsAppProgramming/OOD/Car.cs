@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace WindowsAppLib.OOD
 {
-    public class Car
+    public class Car : Vehicle
     {
-        public string Model;
-        public string Make;
-        public int Year;
         public string Trim;
         public string BodyType;
-        public Engines Engine;
+        
 
         public decimal Kilometers;
         public decimal Price;
+
+        public Car()
+        {
+            Engine = Engines.Cylinders_4;
+        }
+        public Car(string model)
+        {
+            this.Model = model;
+        }
+
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace WindowsAppLib.OOD
 {
-    public class Motorcycle
+    public class Motorcycle : Vehicle
     {
+        public override int GetMaxSpeed()
+        {
+            return 260;
+        }
     }
 }

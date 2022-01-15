@@ -22,3 +22,15 @@ D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\ne
 D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.dll
 D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\ref\Assignment.dll
 D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.pdb
+D:\Matt\Assignments\bin\Debug\net5.0\Assignment.deps.json
+D:\Matt\Assignments\bin\Debug\net5.0\Assignment.dll
+D:\Matt\Assignments\bin\Debug\net5.0\ref\Assignment.dll
+D:\Matt\Assignments\bin\Debug\net5.0\Assignment.pdb
+D:\Matt\Assignments\obj\Debug\net5.0\Assignment.csproj.AssemblyReference.cache
+D:\Matt\Assignments\obj\Debug\net5.0\Assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\Matt\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfoInputs.cache
+D:\Matt\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfo.cs
+D:\Matt\Assignments\obj\Debug\net5.0\Assignment.csproj.CoreCompileInputs.cache
+D:\Matt\Assignments\obj\Debug\net5.0\Assignment.dll
+D:\Matt\Assignments\obj\Debug\net5.0\ref\Assignment.dll
+D:\Matt\Assignments\obj\Debug\net5.0\Assignment.pdb

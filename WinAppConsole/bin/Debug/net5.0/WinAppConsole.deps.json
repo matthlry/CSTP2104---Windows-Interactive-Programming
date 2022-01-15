@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "WinAppConsole/1.0.0": {
+        "dependencies": {
+          "WindowsAppLib": "1.0.0"
+        },
         "runtime": {
           "WinAppConsole.dll": {}
+        }
+      },
+      "WindowsAppLib/1.0.0": {
+        "runtime": {
+          "WindowsAppLib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "WinAppConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WindowsAppLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

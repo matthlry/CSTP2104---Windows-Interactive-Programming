@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {}
+    "D:\\Matt\\WinAppConsole\\WinAppConsole.csproj": {}
   },
   "projects": {
-    "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {
+    "D:\\Matt\\WinAppConsole\\WinAppConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
+        "projectUniqueName": "D:\\Matt\\WinAppConsole\\WinAppConsole.csproj",
         "projectName": "WinAppConsole",
-        "projectPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
+        "projectPath": "D:\\Matt\\WinAppConsole\\WinAppConsole.csproj",
         "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
-        "outputPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\obj\\",
+        "outputPath": "D:\\Matt\\WinAppConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
-                "projectPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj"
+              "D:\\Matt\\WindowsAppProgramming\\WindowsAppLib.csproj": {
+                "projectPath": "D:\\Matt\\WindowsAppProgramming\\WindowsAppLib.csproj"
               }
             }
           }
@@ -64,18 +64,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
+    "D:\\Matt\\WindowsAppProgramming\\WindowsAppLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
+        "projectUniqueName": "D:\\Matt\\WindowsAppProgramming\\WindowsAppLib.csproj",
         "projectName": "WindowsAppLib",
-        "projectPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
+        "projectPath": "D:\\Matt\\WindowsAppProgramming\\WindowsAppLib.csproj",
         "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
-        "outputPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\obj\\",
+        "outputPath": "D:\\Matt\\WindowsAppProgramming\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -124,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

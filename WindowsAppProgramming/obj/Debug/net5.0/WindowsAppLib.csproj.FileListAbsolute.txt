@@ -9,3 +9,15 @@ D:\CSTP 2104 - Windows Interactive Programming\Notes\WindowsAppProgramming\obj\D
 D:\CSTP 2104 - Windows Interactive Programming\Notes\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.dll
 D:\CSTP 2104 - Windows Interactive Programming\Notes\WindowsAppProgramming\obj\Debug\net5.0\ref\WindowsAppLib.dll
 D:\CSTP 2104 - Windows Interactive Programming\Notes\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.pdb
+D:\Matt\WindowsAppProgramming\bin\Debug\net5.0\WindowsAppLib.deps.json
+D:\Matt\WindowsAppProgramming\bin\Debug\net5.0\WindowsAppLib.dll
+D:\Matt\WindowsAppProgramming\bin\Debug\net5.0\ref\WindowsAppLib.dll
+D:\Matt\WindowsAppProgramming\bin\Debug\net5.0\WindowsAppLib.pdb
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.csproj.AssemblyReference.cache
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.AssemblyInfoInputs.cache
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.AssemblyInfo.cs
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.csproj.CoreCompileInputs.cache
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.dll
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\ref\WindowsAppLib.dll
+D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.pdb
