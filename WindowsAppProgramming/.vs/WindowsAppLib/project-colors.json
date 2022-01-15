@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6cb14981-d7a9-4cac-be7c-9b427d7d48a6": {
+      "ProjectGuid": "6cb14981-d7a9-4cac-be7c-9b427d7d48a6",
+      "DisplayName": "AssignmentConsole",
+      "ColorIndex": 0
+    },
+    "6c3de6e2-72b5-4c0e-96f2-6b4b9c53a6b0": {
+      "ProjectGuid": "6c3de6e2-72b5-4c0e-96f2-6b4b9c53a6b0",
+      "DisplayName": "Assignment",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

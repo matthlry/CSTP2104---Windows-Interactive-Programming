@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {}
+    "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {}
   },
   "projects": {
-    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {
+    "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
+        "projectUniqueName": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
         "projectName": "WinAppConsole",
-        "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
-        "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
-        "outputPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\obj\\",
+        "projectPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
+        "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
+        "outputPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\000440554\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -32,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
-                "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj"
+              "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
+                "projectPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj"
               }
             }
           }
@@ -62,26 +64,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
+    "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
+        "projectUniqueName": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
         "projectName": "WindowsAppLib",
-        "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
-        "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
-        "outputPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\obj\\",
+        "projectPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
+        "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
+        "outputPath": "D:\\Matt 2104\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\000440554\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -120,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

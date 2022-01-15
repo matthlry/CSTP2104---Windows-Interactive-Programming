@@ -17,3 +17,22 @@ D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Prog
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\ref\AssignmentConsole.dll
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.pdb
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.genruntimeconfig.cache
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\AssignmentConsole.exe
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\AssignmentConsole.deps.json
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\AssignmentConsole.runtimeconfig.json
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\AssignmentConsole.runtimeconfig.dev.json
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\AssignmentConsole.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\ref\AssignmentConsole.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\AssignmentConsole.pdb
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\Assignment.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\Assignment.pdb
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.csproj.AssemblyReference.cache
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.AssemblyInfoInputs.cache
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.AssemblyInfo.cs
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.csproj.CoreCompileInputs.cache
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.csproj.CopyComplete
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\ref\AssignmentConsole.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.pdb
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.genruntimeconfig.cache

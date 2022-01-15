@@ -46,5 +46,13 @@ namespace Assignment.Assignment1
         {
             return cars;
         }
+        public static List<Truck> GetTrucks()
+        {
+            return trucks;
+        }
+        public static List<Motorcycle> GetMotorcycle()
+        {
+            return motorcycles;
+        }
     }
 }

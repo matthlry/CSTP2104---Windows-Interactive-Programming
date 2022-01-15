@@ -10,3 +10,15 @@ D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Prog
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.dll
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\ref\Assignment.dll
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.pdb
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.deps.json
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\ref\Assignment.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.pdb
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.csproj.AssemblyReference.cache
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfoInputs.cache
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfo.cs
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.csproj.CoreCompileInputs.cache
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\ref\Assignment.dll
+D:\Matt 2104\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.pdb
