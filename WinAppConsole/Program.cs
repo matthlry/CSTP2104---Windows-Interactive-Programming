@@ -6,13 +6,7 @@ namespace WinAppConsole
     class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Welcome to windows Application Development!");
-            Console.BackgroundColor = ConsoleColor.Black;
-
+        {           
             Car car = new Car()
             {
                 Engine = Engines.Cylinders_4,
@@ -41,14 +35,69 @@ namespace WinAppConsole
             // as operator
             // is operator
 
+            var values = new int[] { 2, 4, 5, 8 };
+            var result = Program.Calculate(values, new Squarer());
+            Program.Display(result);
 
+            // Extension Method
+            string s = "123";
+            var isCapitalized = s.IsCapitalized();
+            Console.WriteLine($"{s} isCapitalized:{isCapitalized}");
+            
+            s = "Ace";
+            isCapitalized = s.IsCapitalized();
+            Console.WriteLine($"{s} isCapitalized:{isCapitalized}");
+            
+            s = "base";
+            isCapitalized = s.IsCapitalized();
+            Console.WriteLine($"{s} isCapitalized:{isCapitalized}");
+
+            s = "";
+            isCapitalized = s.IsCapitalized();
+            Console.WriteLine($"{s} isCapitalized:{isCapitalized}");
             //Console.ReadLine();
+        }
+
+        
+        public static int[] Calculate(int[] values, ICalculator calculator)
+        {
+            int[] result = new int[values.Length];
+            for (int i = 0; i < values.Length; i++)
+            {
+                var r = calculator.Calculate(values[i]);
+                result[i] = r;
+            }
+            return result;
+        }
+        public static void Display(int[] values)
+        {
+            for (int i = 0; i < values.Length; i++)
+            {
+                Console.WriteLine($"i={i} {values[i]}");
+            }
         }
         public static void Display(Vehicle vehicle)
         {
             Console.WriteLine(vehicle.Make);
             Console.WriteLine(vehicle.Model);
             Console.WriteLine(vehicle.Year);
+        }
+        public static void Display2(Truck turck)
+        {
+
+        }
+    }
+
+    public static class StringHelper 
+    {
+        // Extension method
+        public static bool IsCapitalized(this string s)
+        {
+            if (string.IsNullOrEmpty(s))
+            {
+                return false;
+            }
+            return char.IsUpper(s[0]);
         }
     }
 
