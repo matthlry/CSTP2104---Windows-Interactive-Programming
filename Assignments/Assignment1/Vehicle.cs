@@ -9,7 +9,7 @@ namespace Assignment.Assignment1
 {
     public class Vehicle
     {
-        public Vehicle(VehicleType type, int year, decimal price, int mileage, bool USvehicle)
+        public Vehicle(int year, decimal price, int mileage, bool USvehicle, bool isDamaged = false, VehicleType type = VehicleType.Unkown)
         {
             _Type = type;
             _Year = year;
@@ -30,6 +30,7 @@ namespace Assignment.Assignment1
         protected VehicleType _Type;
         protected int _Year;
         protected decimal _Price;
+        protected bool _IsDamaged;
 
         public VehicleType Type
         {
@@ -48,7 +49,11 @@ namespace Assignment.Assignment1
             get { return _Price; }
             set { _Price = value; }
         }
-
+        public bool isDamaged
+        {
+            get { return _IsDamaged; }
+            set { _IsDamaged = value; }
+        }
         public string Mileage
         {
             get { return _Mileage.ToString() + _MileageType.ToString(); }

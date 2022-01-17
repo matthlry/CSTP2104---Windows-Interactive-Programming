@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Matt\\AssignmentsConsole\\AssignmentConsole.csproj": {}
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\AssignmentsConsole\\AssignmentConsole.csproj": {}
   },
   "projects": {
-    "D:\\Matt\\AssignmentsConsole\\AssignmentConsole.csproj": {
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\AssignmentsConsole\\AssignmentConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Matt\\AssignmentsConsole\\AssignmentConsole.csproj",
+        "projectUniqueName": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\AssignmentsConsole\\AssignmentConsole.csproj",
         "projectName": "AssignmentConsole",
-        "projectPath": "D:\\Matt\\AssignmentsConsole\\AssignmentConsole.csproj",
-        "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
-        "outputPath": "D:\\Matt\\AssignmentsConsole\\obj\\",
+        "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\AssignmentsConsole\\AssignmentConsole.csproj",
+        "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
+        "outputPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\AssignmentsConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\000440554\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -34,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Matt\\Assignments\\Assignment.csproj": {
-                "projectPath": "D:\\Matt\\Assignments\\Assignment.csproj"
+              "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\Assignments\\Assignment.csproj": {
+                "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\Assignments\\Assignment.csproj"
               }
             }
           }
@@ -68,24 +66,22 @@
         }
       }
     },
-    "D:\\Matt\\Assignments\\Assignment.csproj": {
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\Assignments\\Assignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Matt\\Assignments\\Assignment.csproj",
+        "projectUniqueName": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\Assignments\\Assignment.csproj",
         "projectName": "Assignment",
-        "projectPath": "D:\\Matt\\Assignments\\Assignment.csproj",
-        "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
-        "outputPath": "D:\\Matt\\Assignments\\obj\\",
+        "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\Assignments\\Assignment.csproj",
+        "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
+        "outputPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\Assignments\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\000440554\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

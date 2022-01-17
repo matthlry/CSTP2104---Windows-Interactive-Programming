@@ -7,8 +7,9 @@ namespace AssignmentsConsole
     {
         static void Main(string[] args)
         {
-            Test1.AddCarTest();
-            Test1.CheckCarInventory();
+            // Test1.AddCarTest();
+            // Test1.CheckCarInventory();
+            Test1.DistanceLeft();
         }
     }
 }

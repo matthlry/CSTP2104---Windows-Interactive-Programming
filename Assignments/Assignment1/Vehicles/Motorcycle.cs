@@ -8,23 +8,74 @@ using Assignment.Assignment1.Vehicle_Enum.Motorcycle_Enum;
 
 namespace Assignment.Assignment1.Vehicles
 {
-    public class Motorcycle : Vehicle
+    public class Motorcycle : Vehicle, IDistanceCalculator
     {
-        public Motorcycle(MotorcycleEngine engine, MotorcycleModel model, MotorcycleTrim trim, MotorcycleMake make, int year, decimal price, int mileage, bool USvehicle, VehicleType type = VehicleType.Motorcycle) : base(type, year, price, mileage, USvehicle)
+        public Motorcycle(MotorcycleEngine engine, MotorcycleModel model, MotorcycleTrim trim, MotorcycleMake make, int year, decimal price, int mileage, bool USvehicle, bool damaged = false) : base(year, price, mileage, USvehicle)
         {
+            if (damaged)
+            {
+                _IsDamaged = damaged;
+            }
+            _Type = VehicleType.Motorcycle;
             _Engine = engine;
             _Model = model;
             _Make = make;
             _Trim = trim;
+            _CurrentFuel = 0D;
+            if (_Engine == MotorcycleEngine.Unknown)
+            {
+                _FuelTankMax = 0D;
+                _FuelMileage = 0;
+            }
+            else if (_Engine == MotorcycleEngine.Cylinders_1)
+            {
+                _FuelTankMax = 7.6D;
+                _FuelMileage = 22.34;
+            }
+            else if (_Engine == MotorcycleEngine.Cylinders_2)
+            {
+                _FuelTankMax = 17D;
+                _FuelMileage = 26.8;
+            }
+            else if (_Engine == MotorcycleEngine.Cylinders_4)
+            {
+                _FuelTankMax = 19D;
+                _FuelMileage = 24.8;
+            }
         }
         private MotorcycleEngine _Engine;
         private MotorcycleModel _Model;
         private MotorcycleTrim _Trim;
         private MotorcycleMake _Make;
+        private double _FuelTankMax;
+        private double _CurrentFuel;
+        private double _FuelMileage;
         public MotorcycleEngine Engine
         {
             get { return _Engine; }
-            set { _Engine = value; }
+            set { 
+                _Engine = value;
+                if (_Engine == MotorcycleEngine.Unknown)
+                {
+                    _FuelTankMax = 0D;
+                    _FuelMileage = 0;
+                }
+                else if (_Engine == MotorcycleEngine.Cylinders_1)
+                {
+                    _FuelTankMax = 7.6D;
+                    _FuelMileage = 22.34;
+                }
+                else if (_Engine == MotorcycleEngine.Cylinders_2)
+                {
+                    _FuelTankMax = 17D;
+                    _FuelMileage = 26.8;
+                }
+                else if (_Engine == MotorcycleEngine.Cylinders_4)
+                {
+                    _FuelTankMax = 19D;
+                    _FuelMileage = 24.8;
+                }
+            }
         }
         public MotorcycleModel Model
         {
@@ -40,6 +91,30 @@ namespace Assignment.Assignment1.Vehicles
         {
             get { return _Make; }
             set { _Make = value; }
+        }
+        public void FuelUp(double fuel)
+        {
+            if (fuel <= 0 || _Engine == MotorcycleEngine.Unknown)
+            {
+                return;
+            }
+            if (_CurrentFuel + fuel >= _FuelTankMax)
+            {
+                _CurrentFuel = _FuelTankMax;
+                return;
+            }
+            _CurrentFuel += fuel;
+        }
+        public double EstimateDistance()
+        {
+            if (_Engine == MotorcycleEngine.Unknown)
+            {
+                return 0;
+            }
+            else
+            {
+                return Math.Round(_FuelMileage * _CurrentFuel, 2);
+            }
         }
     }
 }

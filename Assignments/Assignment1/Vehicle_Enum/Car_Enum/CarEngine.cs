@@ -14,7 +14,6 @@ namespace Assignment.Assignment1.Vehicle_Enum.Car_Enum
         Cylinders_8,
         Cylinders_10,
         Electric,
-        Rotary
     };
 }
 

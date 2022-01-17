@@ -9,11 +9,8 @@ namespace Assignment.Assignment1.Vehicle_Enum.Truck_Enum
     public enum TruckEngine
     {
         Unknown,
-        Cylinder_6,
-        Cylinder_8,
-        Cylinder_10,
-        Cylinder_12,
-        Cylinder_14,
-        Cylinder_16
+        Cylinders_8,
+        Cylinders_10,
+        Cylinders_12,
     }
 }

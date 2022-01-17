@@ -8,8 +8,9 @@ namespace Assignment.Assignment1.Vehicle_Enum.Motorcycle_Enum
 {
     public enum MotorcycleEngine
     {
-        Cylinder_1,
-        Cylinder_2,
-        Cylinder_4
+        Unknown,
+        Cylinders_1,
+        Cylinders_2,
+        Cylinders_4
     }
 }

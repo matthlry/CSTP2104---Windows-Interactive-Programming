@@ -10,6 +10,7 @@ namespace Assignment.Assignment1.Vehicle_Enum
     {
         Car,
         Truck,
-        Motorcycle
+        Motorcycle,
+        Unkown
     }
 }
