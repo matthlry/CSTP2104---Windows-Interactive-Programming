@@ -21,3 +21,15 @@ D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.csproj.CoreCompileI
 D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.dll
 D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\ref\WindowsAppLib.dll
 D:\Matt\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\bin\Debug\net5.0\WindowsAppLib.deps.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\bin\Debug\net5.0\WindowsAppLib.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\bin\Debug\net5.0\ref\WindowsAppLib.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\bin\Debug\net5.0\WindowsAppLib.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.csproj.AssemblyReference.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.AssemblyInfoInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.AssemblyInfo.cs
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.csproj.CoreCompileInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\ref\WindowsAppLib.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\WindowsAppProgramming\obj\Debug\net5.0\WindowsAppLib.pdb

@@ -1,11 +1,42 @@
 ﻿using System;
 using WindowsAppLib.OOD;
+using WindowsAppLib.MultiThread;
 
 namespace WinAppConsole
 {
     class Program
     {
+        // Thread, multi-threading
+        // concurrency, 
+        // 
         static void Main(string[] args)
+        {
+            // Week2Examples();
+            Week3Examples();
+
+            Console.ReadKey();
+        }
+        public static void Week3Examples()
+        {
+            try
+            {
+                //var threadRun = new ThreadExample();
+                //threadRun.RunAThread();
+
+                var taskRun = new TaskExample();
+                //taskRun.RunATask();
+                //taskRun.RunATask2();
+                //taskRun.RunATask3();
+                //taskRun.RunATask4();}
+                //taskRun.RunAsParallel();
+                taskRun.RunAsParallel2();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"exception: {ex.Message}");
+            }
+        }
+        public static void Week2Edxamples()
         {           
             Car car = new Car()
             {
