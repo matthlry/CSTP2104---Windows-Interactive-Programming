@@ -9,7 +9,8 @@ namespace AssignmentsConsole
         {
             // Test1.AddCarTest();
             // Test1.CheckCarInventory();
-            Test1.DistanceLeft();
+            //Test1.DistanceLeft();
+            Test1.ParallelQuery();
         }
     }
 }

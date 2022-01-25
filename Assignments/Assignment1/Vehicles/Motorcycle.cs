@@ -92,6 +92,17 @@ namespace Assignment.Assignment1.Vehicles
             get { return _Make; }
             set { _Make = value; }
         }
+        public double CurrentFuel
+        {
+            get
+            {
+                if (_Engine == MotorcycleEngine.Unknown)
+                {
+                    return 0;
+                }
+                return Math.Round(_CurrentFuel, 2);
+            }
+        }
         public void FuelUp(double fuel)
         {
             if (fuel <= 0 || _Engine == MotorcycleEngine.Unknown)
@@ -115,6 +126,15 @@ namespace Assignment.Assignment1.Vehicles
             {
                 return Math.Round(_FuelMileage * _CurrentFuel, 2);
             }
+        }
+
+        public double EstimateNeededFuelForDistance(double distance)
+        {
+            if (_Engine == MotorcycleEngine.Unknown)
+            {
+                return 0;
+            }
+            return Math.Round(distance / _FuelMileage, 2);
         }
     }
 }

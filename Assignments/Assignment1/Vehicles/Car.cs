@@ -118,6 +118,21 @@ namespace Assignment.Assignment1.Vehicles
             get { return _Make; }
             set { _Make = value; }
         }
+        public double CurrentFuel
+        {
+            get 
+            { 
+                if (_Engine == CarEngine.Unknown)
+                {
+                    return 0;
+                }
+                else if (_Engine == CarEngine.Electric)
+                {
+                    return _CurrentBattery;
+                }
+                return Math.Round(_CurrentFuel, 2);
+            }
+        }
         public void FuelUp(double fuel)
         {
             if (fuel <= 0)
@@ -172,6 +187,14 @@ namespace Assignment.Assignment1.Vehicles
                 return Math.Round(_PowerSourceMileage * _CurrentBattery, 2);
             }
             return Math.Round(_PowerSourceMileage * _CurrentFuel, 2);
+        }
+        public double EstimateNeededFuelForDistance(double distance)
+        {
+            if (_Engine == CarEngine.Unknown)
+            {
+                return 0;
+            }
+            return Math.Round(distance / _PowerSourceMileage, 2);
         }
     }
 }
