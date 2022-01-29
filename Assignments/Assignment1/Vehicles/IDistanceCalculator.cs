@@ -8,7 +8,7 @@ namespace Assignment.Assignment1
 {
     public interface IDistanceCalculator
     {
-        double EstimateDistance();
+        double EstimateRemainingDistance();
         double EstimateNeededFuelForDistance(double d);
     }
 }

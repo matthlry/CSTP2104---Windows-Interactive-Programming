@@ -176,7 +176,7 @@ namespace Assignment.Assignment1.Vehicles
             _CurrentBattery += (int)AddedPercentage;
             return;
             }
-        public double EstimateDistance()
+        public double EstimateRemainingDistance()
         {
             if (_Engine == CarEngine.Unknown)
             {

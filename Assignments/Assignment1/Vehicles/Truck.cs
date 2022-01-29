@@ -116,7 +116,7 @@ namespace Assignment.Assignment1.Vehicles
             }
             _CurrentFuel += fuel;
         }
-        public double EstimateDistance()
+        public double EstimateRemainingDistance()
         {
             if (_Engine == TruckEngine.Unknown)
             {

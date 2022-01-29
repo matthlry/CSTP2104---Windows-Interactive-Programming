@@ -1,6 +1,7 @@
 ﻿using System;
 using WindowsAppLib.OOD;
 using WindowsAppLib.MultiThread;
+using WindowsAppLib.DBMS;
 
 namespace WinAppConsole
 {
@@ -12,11 +13,16 @@ namespace WinAppConsole
         static void Main(string[] args)
         {
             // Week2Examples();
-            Week3Examples();
-
+            //Week3Examples();
+            Week4Examples();
             Console.ReadKey();
         }
-        public static void Week3Examples()
+        private static void Week4Examples()
+        {
+            var adonetexample = new AdoNetExample();
+            adonetexample.CreateandAddRows();
+        }
+        private static void Week3Examples()
         {
             try
             {

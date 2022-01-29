@@ -58,15 +58,15 @@ namespace Assignment.Assignment1
 
             foreach(Car c in cars)
             {
-                Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateDistance()}kms left");
+                Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateRemainingDistance()}kms left");
             }
             foreach (Motorcycle m in motorcycles)
             {
-                Console.WriteLine($"{m.Make} {m.Model}, {m.EstimateDistance()}kms left");
+                Console.WriteLine($"{m.Make} {m.Model}, {m.EstimateRemainingDistance()}kms left");
             }
             foreach (Truck t in trucks)
             {
-                Console.WriteLine($"{t.Make} {t.Model}, {t.EstimateDistance()}kms left");
+                Console.WriteLine($"{t.Make} {t.Model}, {t.EstimateRemainingDistance()}kms left");
             }
                         
         }
@@ -97,9 +97,9 @@ namespace Assignment.Assignment1
             t2.FuelUp(97);
             trucks.Add(t2);
 
-            cars.AsParallel().ForAll(c => Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateDistance()}kms left on current fuel({c.CurrentFuel}L). Needs {c.EstimateNeededFuelForDistance(320D)}L to travel 320kms"));
-            motorcycles.AsParallel().ForAll(c => Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateDistance()}kms left on current fuel({c.CurrentFuel}L). Needs {c.EstimateNeededFuelForDistance(320D)}L to travel 320kms"));
-            trucks.AsParallel().ForAll(c => Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateDistance()}kms left on current fuel({c.CurrentFuel}L). Needs {c.EstimateNeededFuelForDistance(320D)}L to travel 320kms"));
+            cars.AsParallel().ForAll(c => Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateRemainingDistance()}kms left on current fuel({c.CurrentFuel}L). Needs {c.EstimateNeededFuelForDistance(320D)}L to travel 320kms"));
+            motorcycles.AsParallel().ForAll(c => Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateRemainingDistance()}kms left on current fuel({c.CurrentFuel}L). Needs {c.EstimateNeededFuelForDistance(320D)}L to travel 320kms"));
+            trucks.AsParallel().ForAll(c => Console.WriteLine($"{c.Make} {c.Model}, {c.EstimateRemainingDistance()}kms left on current fuel({c.CurrentFuel}L). Needs {c.EstimateNeededFuelForDistance(320D)}L to travel 320kms"));
         }
     }
 }
