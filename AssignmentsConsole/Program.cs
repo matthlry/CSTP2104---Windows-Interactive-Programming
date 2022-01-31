@@ -1,5 +1,6 @@
 ﻿using System;
 using Assignment.Assignment1;
+using Assignment.Assignment4;
 
 namespace AssignmentsConsole
 {
@@ -7,10 +8,7 @@ namespace AssignmentsConsole
     {
         static void Main(string[] args)
         {
-            // Test1.AddCarTest();
-            // Test1.CheckCarInventory();
-            //Test1.DistanceLeft();
-            Test1.ParallelQuery();
+            Test.ReadDB();
         }
     }
 }
