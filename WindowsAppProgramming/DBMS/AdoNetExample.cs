@@ -28,8 +28,16 @@ namespace WindowsAppLib.DBMS
             insertComand.Parameters.AddWithValue("@email", "tombrady@vcc.ca");
             insertComand.Parameters.AddWithValue("@address", "Broadway West Vancouver, BC");
             insertComand.Parameters.AddWithValue("@id", "1023");
+            insertComand.ExecuteNonQuery();
+            insertComand.Parameters.Clear();
 
-            int result = insertComand.ExecuteNonQuery();
+
+            insertComand.Parameters.AddWithValue("@name", "Julio");
+            insertComand.Parameters.AddWithValue("@email", "Julio@vcc.ca");
+            insertComand.Parameters.AddWithValue("@address", "101 Broadway West Vancouver, BC");
+            insertComand.Parameters.AddWithValue("@id", "1027");           
+            insertComand.ExecuteNonQuery();
+            insertComand.Parameters.Clear();
 
             var queryCommand = connection.CreateCommand();
             queryCommand.CommandText = "SELECT * FROM students";
@@ -45,9 +53,40 @@ namespace WindowsAppLib.DBMS
 
             connection.Close();
         }
-        public void Insert()
+        public List<string> GetStudents()
         {
-
+            var studentRecords = new List<string>();
+            var stringBuilder = new StringBuilder();
+            try
+            {
+                using var connection = this.OpenConnection();
+                {
+                    connection.Open();
+                    var commandText = "SELECT * FROM students";
+                    using var command = new SqliteCommand(commandText, connection);
+                    {
+                        command.CommandText = commandText;
+                        var reader = command.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            stringBuilder.AppendLine("=======================");
+                            stringBuilder.AppendLine(reader[0].ToString()); ;
+                            stringBuilder.AppendLine(reader[1].ToString());
+                            stringBuilder.AppendLine(reader[2].ToString());
+                            stringBuilder.AppendLine(reader[3].ToString());
+                            
+                            studentRecords.Add(stringBuilder.ToString());
+                            stringBuilder.Clear();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"EXception while reading student records: {ex.Message}");
+                throw;
+            }
+            return studentRecords;
         }
     }
 }

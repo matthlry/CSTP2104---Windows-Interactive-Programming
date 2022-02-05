@@ -15,12 +15,27 @@ namespace WinAppConsole
             // Week2Examples();
             //Week3Examples();
             Week4Examples();
+            //Week5Examples();
+            Console.WriteLine("Press any key to continue");
             Console.ReadKey();
+        }
+        private static void Week5Examples()
+        {
+
         }
         private static void Week4Examples()
         {
             var adonetexample = new AdoNetExample();
             adonetexample.CreateandAddRows();
+
+            try
+            {
+                adonetexample.GetStudents();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"EXception while calling GetStudents: {ex.Message}");
+            }
         }
         private static void Week3Examples()
         {

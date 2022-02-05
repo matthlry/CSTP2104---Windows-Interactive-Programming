@@ -34,3 +34,15 @@ D:\Matt\Assignments\obj\Debug\net5.0\Assignment.csproj.CoreCompileInputs.cache
 D:\Matt\Assignments\obj\Debug\net5.0\Assignment.dll
 D:\Matt\Assignments\obj\Debug\net5.0\ref\Assignment.dll
 D:\Matt\Assignments\obj\Debug\net5.0\Assignment.pdb
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.deps.json
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.dll
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\ref\Assignment.dll
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\bin\Debug\net5.0\Assignment.pdb
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.csproj.AssemblyReference.cache
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfoInputs.cache
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.AssemblyInfo.cs
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.csproj.CoreCompileInputs.cache
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.dll
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\ref\Assignment.dll
+D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\Assignments\obj\Debug\net5.0\Assignment.pdb
