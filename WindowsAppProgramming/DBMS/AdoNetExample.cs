@@ -9,6 +9,11 @@ namespace WindowsAppLib.DBMS
 {
     public class AdoNetExample
     {
+        // Connection string for Microsoft SQL
+        // string connString = "Server=myServer; Database=myDatabase; UserID=myUserID; Password=myPassword";
+        // string connstring = "Server=myServer; Database=myDatabase; Trusted_Connection=True";
+        // string connString = "DataSource=.\SQLEXPRESS; InitialCatalog=master; IntegratedSecurity=True"; dot(.) means local
+
         private SqliteConnection OpenConnection()
         {
             SqliteConnection connection = new SqliteConnection();            

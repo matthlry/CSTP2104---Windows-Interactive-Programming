@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj": {}
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj": {}
   },
   "projects": {
-    "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj": {
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj",
+        "projectUniqueName": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj",
         "projectName": "SharedCommon",
-        "projectPath": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj",
-        "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
-        "outputPath": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\obj\\",
+        "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj",
+        "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
+        "outputPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\000440554\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -61,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

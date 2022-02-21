@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace SharedCommon.Entities
 {
-    public class Student
+    public class Filter
     {
         public string ID { get; set; }
         public string Name { get; set; }
-        public string ProgramID { get; set; }
     }
 }

@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {}
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {}
   },
   "projects": {
-    "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
+        "projectUniqueName": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
         "projectName": "WinAppConsole",
-        "projectPath": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
-        "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
-        "outputPath": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\obj\\",
+        "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\WinAppConsole.csproj",
+        "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
+        "outputPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WinAppConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\000440554\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -35,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
-                "projectPath": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj"
+              "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
+                "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj"
               }
             }
           }
@@ -53,15 +50,15 @@
           "dependencies": {
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[4.1.0, )"
             },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -79,29 +76,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
+    "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
+        "projectUniqueName": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
         "projectName": "WindowsAppLib",
-        "projectPath": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
-        "packagesPath": "C:\\Users\\000440554\\.nuget\\packages\\",
-        "outputPath": "D:\\Matt\\Windows Programming\\matthlry\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\obj\\",
+        "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\WindowsAppLib.csproj",
+        "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
+        "outputPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\WindowsAppProgramming\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\000440554\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -128,15 +122,15 @@
           "dependencies": {
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[4.1.0, )"
             },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -154,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

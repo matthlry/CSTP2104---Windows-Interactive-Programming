@@ -9,6 +9,11 @@ namespace SharedCommon.Interfaces
 {
     public interface IStudentRepository
     {
-        List<Student> GetStudents();
+        List<Student> GetStudents(Filter filter);
+        Student Get(string studentID);
+        public void Add(Student student);
+        public void Update(Student student);
+        public void Delete(string studentID);
+
     }
 }
