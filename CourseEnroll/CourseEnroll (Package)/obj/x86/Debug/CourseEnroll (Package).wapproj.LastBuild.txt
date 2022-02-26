@@ -1,0 +1,24 @@
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\App.xbf
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\MainWindow.xbf
+C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\Redist\Debug\x86\ucrtbased.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\Images\SplashScreen.scale-200.png
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\Images\LockScreenLogo.scale-200.png
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\Images\Square150x150Logo.scale-200.png
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\Images\Square44x44Logo.scale-200.png
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\Images\StoreLogo.png
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\Images\Wide310x150Logo.scale-200.png
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\resources.pri
+C:\Users\Graham\.nuget\packages\microsoft.projectreunion.foundation\0.8.6\lib\net5.0-windows\Microsoft.ApplicationModel.Resources.Projection.dll
+C:\Users\Graham\.nuget\packages\microsoft.projectreunion.winui\0.8.6\lib\net5.0-windows10.0.18362.0\Microsoft.WinUI.dll
+C:\Users\Graham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.22\lib\Microsoft.Windows.SDK.NET.dll
+C:\Users\Graham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.22\lib\WinRT.Runtime.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.deps.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.runtimeconfig.dev.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\App.xbf
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\MainWindow.xbf
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\apphost.exe
+C:\Users\Graham\.nuget\packages\microsoft.projectreunion.foundation\0.8.6\lib\net5.0-windows\Microsoft.ApplicationModel.Resources.Projection.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.runtimeconfig.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.pdb

@@ -1,0 +1,38 @@
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\App.xbf
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\MainWindow.xbf
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\Microsoft.ApplicationModel.Resources.Projection.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\Microsoft.WinUI.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\Microsoft.Windows.SDK.NET.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\WinRT.Runtime.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\CourseEnroll.deps.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\CourseEnroll.runtimeconfig.dev.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\App.xbf
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\MainWindow.xbf
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\CourseEnroll.exe
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\Microsoft.ApplicationModel.Resources.Projection.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\CourseEnroll.runtimeconfig.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\CourseEnroll.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\CourseEnroll.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\resources.pri
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\AppxManifest.xml
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll (Package).build.appxrecipe
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\CourseEnroll (Package).wapproj.AssemblyReference.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\CourseEnroll (Package).wapproj.CoreCompileInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\CourseEnroll.pri.xml
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\priconfig.xml
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\priconfig.xml.intermediate
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\unfiltered.layout.resfiles
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\filtered.layout.resfiles
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\excluded.layout.resfiles
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\resources.resfiles
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\resources.resfiles.intermediate
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\pri.resfiles
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\pri.resfiles.intermediate
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\qualifiers.txt
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\qualifiers.txt.intermediate
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\ProjectArchitectures.txt
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\CourseEnroll (Package).wapproj.LastBuild.txt
