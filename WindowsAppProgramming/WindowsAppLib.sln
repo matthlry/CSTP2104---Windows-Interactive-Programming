@@ -13,6 +13,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment", "..\Assignments\Assignment.csproj", "{6C3DE6E2-72B5-4C0E-96F2-6B4B9C53A6B0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssignmentConsole", "..\AssignmentsConsole\AssignmentConsole.csproj", "{6CB14981-D7A9-4CAC-BE7C-9B427D7D48A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{51A1B52D-C50E-449A-A2CD-86DDD0BC4C63} = {51A1B52D-C50E-449A-A2CD-86DDD0BC4C63}
+		{F105B830-194F-4EAD-8ECC-1D04C61D8049} = {F105B830-194F-4EAD-8ECC-1D04C61D8049}
+		{2CDE1FAE-4CDC-401A-9F5B-4450F1A5F9EE} = {2CDE1FAE-4CDC-401A-9F5B-4450F1A5F9EE}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assignments", "Assignments", "{2D4C3FB6-9486-49BB-8F44-07DB7CADBB48}"
 EndProject
@@ -21,12 +26,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Explore", "Explore", "{6E03071E-ED17-4CAA-8E41-9FA1C4FF3E12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FinalAssignment", "FinalAssignment", "{3C4F26F6-0272-49D0-ACA7-4E98DA95C74D}"
+	ProjectSection(SolutionItems) = preProject
+		TestProject.cs = TestProject.cs
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{51A1B52D-C50E-449A-A2CD-86DDD0BC4C63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{51A1B52D-C50E-449A-A2CD-86DDD0BC4C63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedCommon", "..\SharedCommon\SharedCommon.csproj", "{2CDE1FAE-4CDC-401A-9F5B-4450F1A5F9EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedCommon", "..\SharedCommon\SharedCommon.csproj", "{2CDE1FAE-4CDC-401A-9F5B-4450F1A5F9EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "..\BusinessLogic\BusinessLogic.csproj", "{F105B830-194F-4EAD-8ECC-1D04C61D8049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "..\BusinessLogic\BusinessLogic.csproj", "{F105B830-194F-4EAD-8ECC-1D04C61D8049}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

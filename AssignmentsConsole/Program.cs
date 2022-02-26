@@ -1,6 +1,7 @@
 ﻿using System;
 using Assignment.Assignment1;
 using Assignment.Assignment4;
+using DataAccessLayer;
 
 namespace AssignmentsConsole
 {
@@ -8,7 +9,7 @@ namespace AssignmentsConsole
     {
         static void Main(string[] args)
         {
-            Test.ReadDB();
+            DataAccessLayer.Test.GetStudent();
         }
     }
 }

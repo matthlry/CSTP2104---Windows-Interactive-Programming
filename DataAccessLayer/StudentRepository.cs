@@ -24,12 +24,13 @@ namespace DataAccessLayer
                 string sqlQuery = ($"SELECT * FROM STUDENT WHERE ID = '{filter.ID}' OR Name = '{filter.Name}'");
                 using (var command = new SqlCommand(sqlQuery))
                 {
+                    command.Connection = connection;
                     connection.Open();
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            var student = new Student() { ID = reader.GetString(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                            var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
                             students.Add(student);
                         }
                     }
@@ -44,12 +45,13 @@ namespace DataAccessLayer
                 string sqlQuery = ($"SELECT * FROM STUDENT WHERE ID = '{studentID}'");
                 using (var command = new SqlCommand(sqlQuery))
                 {
+                    command.Connection = connection;
                     connection.Open();
                     using (var reader = command.ExecuteReader())
                     {
                         reader.Read();
                         {
-                            var student = new Student() { ID = reader.GetString(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                            var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
                             return student;
                         }
                     }
@@ -63,6 +65,7 @@ namespace DataAccessLayer
                 string sqlQuery = ($"INSERT INTO STUDENT VALUES ({student.ID}, {student.Name}, {student.ProgramID}");
                 using (var command = new SqlCommand(sqlQuery))
                 {
+                    command.Connection = connection;
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
@@ -75,6 +78,7 @@ namespace DataAccessLayer
                 string sqlQuery = ($"UPDATE STUDENT SET Name = '{student.Name}', ProgramID = '{student.ProgramID}' WHERE ID = '{student.ID}'");
                 using (var command = new SqlCommand(sqlQuery))
                 {
+                    command.Connection = connection;
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
@@ -87,6 +91,7 @@ namespace DataAccessLayer
                 string sqlQuery = ($"DELETE FROM STUDENT WHERE ID = '{studentID}'");
                 using (var command = new SqlCommand(sqlQuery))
                 {
+                    command.Connection = connection;
                     connection.Open();
                     command.ExecuteNonQuery();
                 }

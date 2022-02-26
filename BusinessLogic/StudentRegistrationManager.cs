@@ -16,9 +16,9 @@ namespace BusinessLogic
             this.studentRepository = studentRepository;
         }
 
-        public List<Student> GetRegisteredStudents()
+        public List<Student> GetRegisteredStudents(Filter filter)
         {
-            var students = this.studentRepository.GetStudents();
+            var students = this.studentRepository.GetStudents(filter);
 
             return students;
         }

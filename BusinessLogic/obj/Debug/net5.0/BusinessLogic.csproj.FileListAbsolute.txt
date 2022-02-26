@@ -1,0 +1,15 @@
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.AssemblyReference.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.AssemblyInfoInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.AssemblyInfo.cs
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\bin\Debug\net5.0\BusinessLogic.deps.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\bin\Debug\net5.0\BusinessLogic.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\bin\Debug\net5.0\ref\BusinessLogic.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\bin\Debug\net5.0\BusinessLogic.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\bin\Debug\net5.0\SharedCommon.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\bin\Debug\net5.0\SharedCommon.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.CopyComplete
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\ref\BusinessLogic.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\obj\Debug\net5.0\BusinessLogic.pdb

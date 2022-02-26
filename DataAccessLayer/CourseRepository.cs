@@ -25,6 +25,7 @@ namespace DataAccessLayer
                 string sqlQuery = "SELECT CourseID, CourseName, CourseDescription, HasPrerequisite FROM COURSE";
                 using (var command = new SqlCommand(sqlQuery))
                 {
+                    command.Connection = connection;
                     connection.Open();
                     using (var reader = command.ExecuteReader())
                     {

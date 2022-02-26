@@ -8,7 +8,7 @@ namespace SharedCommon.Entities
 {
     public class Student
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string ProgramID { get; set; }
     }

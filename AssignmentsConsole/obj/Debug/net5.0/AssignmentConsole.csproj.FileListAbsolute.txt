@@ -174,3 +174,15 @@ D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\
 D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\ref\AssignmentConsole.dll
 D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.pdb
 D:\Matt\Windows Programming\matthlry\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\obj\Debug\net5.0\AssignmentConsole.genruntimeconfig.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\BusinessLogic.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\DataAccessLayer.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\SharedCommon.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\BusinessLogic.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\AssignmentsConsole\bin\Debug\net5.0\SharedCommon.pdb

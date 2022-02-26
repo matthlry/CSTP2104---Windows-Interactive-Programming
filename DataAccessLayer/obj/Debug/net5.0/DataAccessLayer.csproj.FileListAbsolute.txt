@@ -1,0 +1,15 @@
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.deps.json
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\bin\Debug\net5.0\ref\DataAccessLayer.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\bin\Debug\net5.0\SharedCommon.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\bin\Debug\net5.0\SharedCommon.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
