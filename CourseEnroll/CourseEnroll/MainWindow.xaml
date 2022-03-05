@@ -7,7 +7,131 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <!-- <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"> -->
+    <!-- <Button x:Name="myButton" Click="myButton_Click">Click Me</Button> -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="DarkCyan" Grid.ColumnSpan="2" Grid.Row="0"/>
+        <Border Background="DarkRed" Grid.Column="0" Grid.Row="1"/>
+        <Border Background="DarkGreen" Grid.Column="1" Grid.Row="1"/>
+
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="50" Text="Logo"/>
+        </StackPanel>
+        
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Row="0" VerticalAlignment="Top">
+                <TextBlock HorizontalAlignment="Center" FontSize="30" Text="Students" TextWrapping="Wrap"/>
+                <TextBox x:Name="studentFilter" Margin="10, 0, 10, 0"  PlaceholderText="Student Name or ID"/> <!-- Keydown="function_name" for Enter Key Event Handler -->
+            </StackPanel>
+            <ListView x:Name="studentList" Grid.Row="1" HorizontalAlignment="Stretch" Margin="0, 15, 0, 0" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+                <ListViewItem>asd</ListViewItem>
+            </ListView>
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0" VerticalAlignment="Top">
+                <TextBlock HorizontalAlignment="Center" FontSize="25" Text="Semester Course Availability for Students" TextWrapping="WrapWholeWords"/>
+                <TextBlock x:Name="studentName" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="20" Text="Student Name:" TextWrapping="WrapWholeWords"/>
+                <TextBlock x:Name="studentID" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="20" Text="Student ID: " TextWrapping="WrapWholeWords"/>
+                <TextBlock x:Name="studentProgram" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="20" Text="Student Program: " TextWrapping="WrapWholeWords"/>
+                <StackPanel  Margin="10, 10, 10, 10" Orientation="Horizontal">
+                    <ComboBox Header="Year" x:Name="year" Margin="0, 0, 40, 0" PlaceholderText="Course Year">
+                        <ComboBoxItem>Year 1</ComboBoxItem>
+                        <ComboBoxItem>Year 2</ComboBoxItem>
+                        <ComboBoxItem>Year 3</ComboBoxItem>
+                    </ComboBox>
+                    <ComboBox Header="Term" x:Name="term" Margin="0, 0, 40, 0" PlaceholderText="Course Term">
+                        <ComboBoxItem>Term 1</ComboBoxItem>
+                        <ComboBoxItem>Term 2</ComboBoxItem>
+                        <ComboBoxItem>Term 3</ComboBoxItem>
+                    </ComboBox>
+                    <Button x:Name="courseSearchButton" Margin="0, 23, 0, 0">Search</Button>
+                    <!-- Click="function_name" for On Click Event Handler -->
+                </StackPanel>
+            </StackPanel>
+            <ScrollViewer Grid.Row="1"  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center" FontSize="25" Text="Courses Student Can Take" TextWrapping="WrapWholeWords"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Course ID" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Availability" TextWrapping="WrapWholeWords"/>
+                        </StackPanel>
+                        <ListView>
+
+                        </ListView>
+
+                        <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Currently Taking" TextWrapping="WrapWholeWords"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Course ID" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Availability" TextWrapping="WrapWholeWords"/>
+                        </StackPanel>
+                        <ListView>
+
+                        </ListView>
+
+                        <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Taken" TextWrapping="WrapWholeWords"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Course ID" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Grades" TextWrapping="WrapWholeWords"/>
+                        </StackPanel>
+                        <ListView>
+
+                        </ListView>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+    
+    <!-- </StackPanel> -->
+
+    
 </Window>
