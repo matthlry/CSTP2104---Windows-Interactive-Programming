@@ -8,10 +8,13 @@ namespace SharedCommon.Entities
 {
     public class Course
     {
-        public string CourseID { get; set; }
-        public string CourseName { get; set; }
-        public string CourseDescription { get; set; }
+        public string ID { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string ProgramID { get; set; }
         public bool HasPrerequisite { get; set; }
+        public bool isRequired { get; set; }
+        public int Credits { get; set; }
 
     }
 }

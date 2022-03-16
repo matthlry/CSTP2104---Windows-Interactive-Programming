@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "phcpglxcp2FLqbi7omZLwHwJXRGiHE7IXvWSJ9xfxFLP/QnnY8ABkBjyQJeUtWjjpByiNY3EWJNYH2hfDupXJA==",
+  "dgSpecHash": "w6oHp8rrLuBJO1cFq7o01DHLh7H05Wl6wBO1YnEkiGz2ERY0YIThAelTz44OVYh7xRLGB9ZM2zj1Nq1WVBDYrg==",
   "success": true,
   "projectFilePath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\CourseEnroll\\CourseEnroll\\CourseEnroll.csproj",
   "expectedPackageFiles": [
@@ -9,16 +9,16 @@
     "C:\\Users\\Graham\\.nuget\\packages\\microsoft.projectreunion.foundation\\0.8.6\\microsoft.projectreunion.foundation.0.8.6.nupkg.sha512",
     "C:\\Users\\Graham\\.nuget\\packages\\microsoft.projectreunion.interactiveexperiences\\0.8.6\\microsoft.projectreunion.interactiveexperiences.0.8.6.nupkg.sha512",
     "C:\\Users\\Graham\\.nuget\\packages\\microsoft.projectreunion.winui\\0.8.6\\microsoft.projectreunion.winui.0.8.6.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.14\\microsoft.netcore.app.runtime.win-x64.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.14\\microsoft.aspnetcore.app.runtime.win-x64.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\5.0.14\\microsoft.netcore.app.runtime.win-arm64.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.22\\microsoft.windows.sdk.net.ref.10.0.19041.22.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\5.0.14\\microsoft.aspnetcore.app.runtime.win-arm64.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\5.0.14\\microsoft.netcore.app.runtime.win-x86.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\5.0.14\\microsoft.windowsdesktop.app.runtime.win-arm64.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\5.0.14\\microsoft.aspnetcore.app.runtime.win-x86.5.0.14.nupkg.sha512",
-    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\5.0.14\\microsoft.windowsdesktop.app.runtime.win-x86.5.0.14.nupkg.sha512"
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.15\\microsoft.netcore.app.runtime.win-x64.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.15\\microsoft.aspnetcore.app.runtime.win-x64.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\5.0.15\\microsoft.netcore.app.runtime.win-arm64.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.15\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.23\\microsoft.windows.sdk.net.ref.10.0.19041.23.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\5.0.15\\microsoft.aspnetcore.app.runtime.win-arm64.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\5.0.15\\microsoft.netcore.app.runtime.win-x86.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\5.0.15\\microsoft.windowsdesktop.app.runtime.win-arm64.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\5.0.15\\microsoft.aspnetcore.app.runtime.win-x86.5.0.15.nupkg.sha512",
+    "C:\\Users\\Graham\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\5.0.15\\microsoft.windowsdesktop.app.runtime.win-x86.5.0.15.nupkg.sha512"
   ],
   "logs": []
 }

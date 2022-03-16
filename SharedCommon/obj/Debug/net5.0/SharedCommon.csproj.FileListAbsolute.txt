@@ -9,3 +9,4 @@ D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Prog
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\SharedCommon\obj\Debug\net5.0\SharedCommon.dll
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\SharedCommon\obj\Debug\net5.0\ref\SharedCommon.dll
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\SharedCommon\obj\Debug\net5.0\SharedCommon.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\SharedCommon\obj\Debug\net5.0\SharedCommon.csproj.AssemblyReference.cache

@@ -11,8 +11,8 @@ D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Prog
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\resources.pri
 C:\Users\Graham\.nuget\packages\microsoft.projectreunion.foundation\0.8.6\lib\net5.0-windows\Microsoft.ApplicationModel.Resources.Projection.dll
 C:\Users\Graham\.nuget\packages\microsoft.projectreunion.winui\0.8.6\lib\net5.0-windows10.0.18362.0\Microsoft.WinUI.dll
-C:\Users\Graham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.22\lib\Microsoft.Windows.SDK.NET.dll
-C:\Users\Graham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.22\lib\WinRT.Runtime.dll
+C:\Users\Graham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.23\lib\Microsoft.Windows.SDK.NET.dll
+C:\Users\Graham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.23\lib\WinRT.Runtime.dll
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.deps.json
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.runtimeconfig.dev.json
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\App.xbf

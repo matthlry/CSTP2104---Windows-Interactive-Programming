@@ -87,15 +87,47 @@
                     <!-- Click="function_name" for On Click Event Handler -->
                 </StackPanel>
             </StackPanel>
+            <ScrollViewer Grid.Row="1"  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center" FontSize="25" Text="Courses Student Can Take" TextWrapping="WrapWholeWords"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Course ID" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Availability" TextWrapping="WrapWholeWords"/>
+                        </StackPanel>
+                        <ListView>
 
-            <StackPanel Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center">
-                <TextBlock HorizontalAlignment="Center" FontSize="25" Text="Courses Student Can Take" TextWrapping="WrapWholeWords"/>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Course ID" TextWrapping="WrapWholeWords"/>
-                    <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
-                    <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Availability" TextWrapping="WrapWholeWords"/>
-                </StackPanel>
-            </StackPanel>
+                        </ListView>
+
+                        <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Currently Taking" TextWrapping="WrapWholeWords"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Course ID" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Availability" TextWrapping="WrapWholeWords"/>
+                        </StackPanel>
+                        <ListView>
+
+                        </ListView>
+
+                        <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Taken" TextWrapping="WrapWholeWords"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Course ID" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Grades" TextWrapping="WrapWholeWords"/>
+                        </StackPanel>
+                        <ListView>
+
+                        </ListView>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
         </Grid>
     </Grid>
     

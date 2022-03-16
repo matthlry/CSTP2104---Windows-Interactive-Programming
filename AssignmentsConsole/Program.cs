@@ -9,7 +9,7 @@ namespace AssignmentsConsole
     {
         static void Main(string[] args)
         {
-            DataAccessLayer.Test.GetStudent();
+            DataAccessLayer.Test.GetRecommendation("10564");
         }
     }
 }

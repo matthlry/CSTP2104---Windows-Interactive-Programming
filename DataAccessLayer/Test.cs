@@ -10,11 +10,34 @@ namespace DataAccessLayer
     {
         static DBConfig dbconfig = new DBConfig();
         static StudentRepository st = new StudentRepository(dbconfig);
+        static CourseRepository cr = new CourseRepository(dbconfig);
 
-        public static void GetStudent()
+        //public static void GetStudent()
+        //{
+            //Student theStudent = st.Get("123456");
+           // Console.WriteLine($"{theStudent.Name} {theStudent.ID.ToString()} {theStudent.ProgramID}");
+       // }
+
+        //public static void GetCompletedStudent(string id)
+        //{
+            //List<StudentCourse> sc = cr.GetStudentCompletedCourses(id);
+
+            //foreach(StudentCourse course in sc)
+            //{
+                //Console.WriteLine($"{course.CourseID}, {course.Description}, {course.Grade}");
+            //}
+        //}
+
+        public static void GetRecommendation(string id)
         {
-            Student theStudent = st.Get("123456");
-            Console.WriteLine($"{theStudent.Name} {theStudent.ID.ToString()} {theStudent.ProgramID}");
+            List<Course> c = cr.GetStudentRecommendedCourses(id);
+
+            foreach(Course course in c)
+            {
+                Console.WriteLine($"{course.ID}, {course.Description}");
+            }
         }
+
+
     }
 }
