@@ -34,10 +34,19 @@ namespace DataAccessLayer
 
             foreach(Course course in c)
             {
-                Console.WriteLine($"{course.ID}, {course.Description}");
+                Console.WriteLine($"{course.ID} {course.Description}");
             }
         }
 
+        public static void GetRecommendationelectives(string id)
+        {
+            List<Course> c = cr.GetStudentRecommendedElectives(id);
+
+            foreach (Course course in c)
+            {
+                Console.WriteLine($"{course.ID} {course.Description}");
+            }
+        }
 
     }
 }
