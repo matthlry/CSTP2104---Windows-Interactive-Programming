@@ -58,6 +58,124 @@ namespace DataAccessLayer
                 }
             }           
         }
+
+        public List<Student> GetStudentsAllowedForCourse(string courseID)
+        {
+            var studentsList = new List<Student>();
+            var studentsNotCompleted = new List<Student>();
+            var studentsCompletedPrereq = new List<Student>();
+
+            Course course = new Course();
+            List<CoursePrerequisite> prePreqs = new List<CoursePrerequisite>();
+
+            using (var connection = new SqlConnection(dBConfig.GetConnectionString()))
+            {   
+                try
+                {
+                    string queryCourse = ($@"SELECT * FROM Course WHERE ID = '{courseID}'");
+                    {
+                        using (var command = new SqlCommand(queryCourse))
+                        {
+                            command.Connection = connection;
+                            connection.Open();
+                            using (var reader = command.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    course = new Course { ID = reader.GetString(0), Name = reader.GetString(1), ProgramID = reader.GetString(2), HasPrerequisite = reader.GetBoolean(3), Description = reader.GetString(4), isRequired = reader.GetBoolean(5), Credits = reader.GetInt32(6) };
+                                }
+                            }
+                            connection.Close();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+                
+                if (!course.HasPrerequisite)
+                {
+                    string query1 = ($@"SELECT sc.StudentID, s.Name, s.ProgramID
+                                    FROM StudentCourse sc
+                                    INNER JOIN Student s ON s.ID = sc.StudentID
+                                    WHERE (sc.CourseID = '{course.ID}' AND sc.isCompleted IS NULL AND s.ProgramID = {course.ProgramID})");
+                    using (var command = new SqlCommand(query1))
+                    {
+                        command.Connection = connection;
+                        connection.Open();
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                                studentsNotCompleted.Add(student);
+                            }
+                        }
+                        connection.Close();
+                        return studentsNotCompleted;
+                    }
+                }
+                string query2 = ($@"SELECT * FROM CoursePrerequisite WHERE CourseID = '{course.ID}'");
+                using (var command = new SqlCommand(query2))
+                {
+                    command.Connection = connection;
+                    connection.Open();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var cp = new CoursePrerequisite() { CourseID = reader.GetString(0), PrerequisiteID = reader.GetString(1), PrerequisiteComposite = reader.GetValue(2).ToString() };
+                            prePreqs.Add(cp);
+                        }
+                    }
+                    connection.Close();
+                }
+
+                foreach (CoursePrerequisite cp in prePreqs)
+                {
+                    string query3 = ($@"SELECT s.ID, s.Name, s.ProgramID
+                                    FROM Student s 
+                                    INNER JOIN StudentCourse sc ON sc.StudentID = s.ID
+                                    WHERE sc.CourseID = '{cp.PrerequisiteID}' AND sc.isCompleted = 'True'");
+                    using (var command = new SqlCommand(query3))
+                    {
+                        command.Connection = connection;
+                        connection.Open();
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                                if (cp.PrerequisiteComposite == "or")
+                                {
+                                    if (studentsList.Exists(x => x.ID == student.ID))
+                                    {
+                                        continue;
+                                    }
+                                    studentsList.Add(student);
+                                }
+                                else if (cp.PrerequisiteComposite == "and")
+                                {
+                                    if (studentsCompletedPrereq.Exists(x => x.ID == student.ID))
+                                    {
+                                        studentsList.Add(student);
+                                        continue;
+                                    }
+                                    studentsCompletedPrereq.Add(student);
+                                }
+                                else
+                                {
+                                    studentsList.Add(student);
+                                }
+                            }
+                        }
+                        connection.Close();
+                    }                   
+                }                  
+            }
+            return studentsList;
+        }
         public void Add(Student student)
         {
             using (var connection = new SqlConnection(dBConfig.GetConnectionString()))

@@ -9,9 +9,10 @@ namespace AssignmentsConsole
     {
         static void Main(string[] args)
         {
-            DataAccessLayer.Test.GetRecommendation("10564");
+            //DataAccessLayer.Test.GetRecommendation("10564");
 
-            DataAccessLayer.Test.GetRecommendationelectives("10564");
+            //DataAccessLayer.Test.GetRecommendationelectives("10564");
+            DataAccessLayer.Test.GetStudentsAllowed("COMP201");
         }
     }
 }

@@ -12,5 +12,10 @@ namespace SharedCommon.Interfaces
         List<Course> GetCourses();
         List<Course> GetCourses(string CourseIDFilter);
         List<Course> GetStudentRecommendedCourses(string studentID);
+        List<StudentCourse> GetStudentCompletedCourses(string studentID);
+        List<Course> GetCurrentCourses(string studentID);
+        List<Course> GetStudentRecommendedElectives(string studentID);
+
+
     }
 }

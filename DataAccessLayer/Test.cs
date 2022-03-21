@@ -12,21 +12,21 @@ namespace DataAccessLayer
         static StudentRepository st = new StudentRepository(dbconfig);
         static CourseRepository cr = new CourseRepository(dbconfig);
 
-        //public static void GetStudent()
-        //{
-            //Student theStudent = st.Get("123456");
-           // Console.WriteLine($"{theStudent.Name} {theStudent.ID.ToString()} {theStudent.ProgramID}");
-       // }
+        public static void GetStudent()
+        {
+            Student theStudent = st.Get("123456");
+            Console.WriteLine($"{theStudent.Name} {theStudent.ID.ToString()} {theStudent.ProgramID}");
+        }
 
-        //public static void GetCompletedStudent(string id)
-        //{
-            //List<StudentCourse> sc = cr.GetStudentCompletedCourses(id);
+        public static void GetCompletedStudent(string id)
+        {
+            List<StudentCourse> sc = cr.GetStudentCompletedCourses(id);
 
-            //foreach(StudentCourse course in sc)
-            //{
-                //Console.WriteLine($"{course.CourseID}, {course.Description}, {course.Grade}");
-            //}
-        //}
+            foreach(StudentCourse course in sc)
+            {
+                Console.WriteLine($"{course.CourseID}, {course.Description}, {course.Grade}");
+            }
+        }
 
         public static void GetRecommendation(string id)
         {
@@ -38,7 +38,7 @@ namespace DataAccessLayer
             }
         }
 
-        public static void GetRecommendationelectives(string id)
+       public static void GetRecommendationelectives(string id)
         {
             List<Course> c = cr.GetStudentRecommendedElectives(id);
 
@@ -48,5 +48,14 @@ namespace DataAccessLayer
             }
         }
 
+        public static void GetStudentsAllowed(string courseID)
+        {
+            List<Student> s = st.GetStudentsAllowedForCourse(courseID);
+
+            foreach (Student student in s)
+            {
+                Console.WriteLine($"{student.Name} {student.ID}");
+            }
+        }
     }
 }
