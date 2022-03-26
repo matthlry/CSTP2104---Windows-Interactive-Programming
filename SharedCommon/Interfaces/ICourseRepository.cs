@@ -9,8 +9,7 @@ namespace SharedCommon.Interfaces
 {
     public interface ICourseRepository
     {
-        List<Course> GetCourses();
-        List<Course> GetCourses(string CourseIDFilter);
+        List<Course> GetCourses(string programID);
         List<Course> GetStudentRecommendedCourses(string studentID);
         List<StudentCourse> GetStudentCompletedCourses(string studentID);
         List<Course> GetCurrentCourses(string studentID);

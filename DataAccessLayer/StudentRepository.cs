@@ -19,24 +19,31 @@ namespace DataAccessLayer
         public List<Student> GetStudents(Filter filter)
         {
             var students = new List<Student>();
-            using (var connection = new SqlConnection(dBConfig.GetConnectionString()))
+            try
             {
-                string sqlQuery = ($"SELECT * FROM STUDENT WHERE ID = '{filter.ID}' OR Name = '{filter.Name}'");
-                using (var command = new SqlCommand(sqlQuery))
+                using (var connection = new SqlConnection(dBConfig.GetConnectionString()))
                 {
-                    command.Connection = connection;
-                    connection.Open();
-                    using (var reader = command.ExecuteReader())
+                    string sqlQuery = ($"SELECT * FROM STUDENT WHERE ID = '{filter.ID}' OR Name = '{filter.Name}'");
+                    using (var command = new SqlCommand(sqlQuery))
                     {
-                        while (reader.Read())
+                        command.Connection = connection;
+                        connection.Open();
+                        using (var reader = command.ExecuteReader())
                         {
-                            var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
-                            students.Add(student);
+                            while (reader.Read())
+                            {
+                                var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                                students.Add(student);
+                            }
                         }
                     }
                 }
+                return students;
             }
-            return students;
+            catch (Exception ex)
+            {
+                return null;
+            }            
         }
         public Student Get(string studentID)
         {
@@ -59,7 +66,7 @@ namespace DataAccessLayer
             }           
         }
 
-        public List<Student> GetStudentsAllowedForCourse(string courseID)
+        public List<Student> GetStudentsAllowedForCourse(string courseID, string programID)
         {
             var studentsList = new List<Student>();
             var studentsNotCompleted = new List<Student>();
@@ -72,7 +79,9 @@ namespace DataAccessLayer
             {   
                 try
                 {
-                    string queryCourse = ($@"SELECT * FROM Course WHERE ID = '{courseID}'");
+                    string queryCourse = ($@"SELECT c.ID, c.Name, pc.ProgramID, c.HasPrerequisite, c.Description, pc.isRequired, c.Credits  FROM Course c 
+	                                        INNER JOIN ProgramCourse pc ON pc.CourseID = c.ID
+                                            WHERE ID = '{courseID}' AND pc.ProgramID = '{programID}'");
                     {
                         using (var command = new SqlCommand(queryCourse))
                         {
@@ -96,10 +105,11 @@ namespace DataAccessLayer
                 
                 if (!course.HasPrerequisite)
                 {
+                    Console.WriteLine("HERE");
                     string query1 = ($@"SELECT sc.StudentID, s.Name, s.ProgramID
                                     FROM StudentCourse sc
                                     INNER JOIN Student s ON s.ID = sc.StudentID
-                                    WHERE (sc.CourseID = '{course.ID}' AND sc.isCompleted IS NULL AND s.ProgramID = {course.ProgramID})");
+                                    WHERE (sc.CourseID = '{course.ID}' AND sc.isCompleted IS NULL AND s.ProgramID = '{course.ProgramID}')");
                     using (var command = new SqlCommand(query1))
                     {
                         command.Connection = connection;
@@ -146,7 +156,7 @@ namespace DataAccessLayer
                         {
                             while (reader.Read())
                             {
-                                var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                                var student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };                         
                                 if (cp.PrerequisiteComposite == "or")
                                 {
                                     if (studentsList.Exists(x => x.ID == student.ID))

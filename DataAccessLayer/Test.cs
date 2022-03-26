@@ -48,10 +48,9 @@ namespace DataAccessLayer
             }
         }
 
-        public static void GetStudentsAllowed(string courseID)
+        public static void GetStudentsAllowed(string courseID, string programID)
         {
-            List<Student> s = st.GetStudentsAllowedForCourse(courseID);
-
+            List<Student> s = st.GetStudentsAllowedForCourse(courseID, programID);
             foreach (Student student in s)
             {
                 Console.WriteLine($"{student.Name} {student.ID}");

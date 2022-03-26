@@ -17,14 +17,16 @@ namespace DataAccessLayer
             this.dBConfig = dBConfig;
         }
 
-        public List<Course> GetCourses()
+        public List<Course> GetCourses(string programID)
         {
             var courses = new List<Course>();
             try
             {
                 using (var connection = new SqlConnection(dBConfig.GetConnectionString()))
                 {
-                    string sqlQuery = "SELECT ID, Name,  Credits, ProgramID, Description, HasPrerequisite, isRequired FROM COURSE";
+                    string sqlQuery = (@$"SELECT c.ID, c.Name, c.Credits, c.Description, c.HasPrerequisite, pc.isRequired FROM COURSE c
+                                          INNER JOIN ProgramCourse pc ON pc.CourseID = c.ID
+                                          WHERE pc.ProgramID = '{programID}'");
                     using (var command = new SqlCommand(sqlQuery))
                     {
                         command.Connection = connection;
@@ -34,7 +36,7 @@ namespace DataAccessLayer
                             while (reader.Read())
                             {
                                 //Console.WriteLine("{0}, {1}", reader.GetString(0), reader.GetString(1));
-                                var course = new Course() { ID = reader.GetString(0), Name = reader.GetString(1), Credits = reader.GetInt32(2), ProgramID = reader.GetString(3), Description = reader.GetString(4), HasPrerequisite = reader.GetBoolean(5), isRequired = reader.GetBoolean(6) };
+                                var course = new Course() { ID = reader.GetString(0), Name = reader.GetString(1), Credits = reader.GetInt32(2), ProgramID = programID, Description = reader.GetString(3), HasPrerequisite = reader.GetBoolean(4), isRequired = reader.GetBoolean(5) };
                                 courses.Add(course);
                             }
                         }
@@ -121,14 +123,31 @@ namespace DataAccessLayer
             var noPrereqCourses = new List<Course>();
             var completedCourses = new List<Course>();
             var coursesWithPrereq = new List<CoursePrerequisite>();
+            var student = new Student();
             try
             {
                 using (var connection = new SqlConnection(dBConfig.GetConnectionString()))
                 {
+                    string query = (@$"SELECT ID, Name, ProgramID FROM Student WHERE ID = {studentID}");
+                    using (var command = new SqlCommand(query))
+                    {
+                        command.Connection = connection;
+                        connection.Open();
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                            }
+                        }
+                        connection.Close();
+                    }
                     string query1 = (@$"SELECT sc.CourseID, c.Description
                                     FROM StudentCourse sc
-                                    INNER JOIN Course c ON c.ID = sc.CourseID
-                                    WHERE(sc.StudentID = '{studentID}' AND sc.isCompleted IS NULL AND c.HasPrerequisite = 'False' AND c.isRequired = 'True')");
+                                    INNER JOIN Course c ON c.ID = sc.CourseID                                 
+                                    INNER JOIN Student s ON s.ID = sc.StudentID
+									INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
+                                    WHERE(s.ID = '{student.ID}' AND sc.isCompleted IS NULL AND c.HasPrerequisite = 'False' AND pc.isRequired = 'True' AND pc.ProgramID = '{student.ProgramID}')");
                     using (var command = new SqlCommand(query1))
                     {
                         command.Connection = connection;
@@ -146,7 +165,7 @@ namespace DataAccessLayer
                     string query2 = (@$"SELECT sc.CourseID
                                     FROM StudentCourse sc
                                     INNER JOIN Course c ON c.ID = sc.CourseID
-                                    WHERE(sc.StudentID = '{studentID}' AND sc.isCompleted = 'True')");
+                                    WHERE(sc.StudentID = '{student.ID}' AND sc.isCompleted = 'True')");
                     using (var command = new SqlCommand(query2))
                     {
                         command.Connection = connection;
@@ -162,10 +181,11 @@ namespace DataAccessLayer
                         connection.Close();
                     }
                     string query3 = (@$"SELECT sc.CourseID, c1.Description, cs.PrerequisiteID, cs.PrerequisiteComposite
-                                FROM StudentCourse sc
-                                INNER JOIN Course c1 ON c1.ID = sc.CourseID
-                                INNER JOIN CoursePrerequisite cs ON cs.CourseID = sc.CourseID
-                                WHERE(sc.StudentID = '{studentID}' AND (sc.isCompleted = 'False' OR sc.isCompleted IS NULL) AND c1.HasPrerequisite = 1)");
+                                    FROM StudentCourse sc
+                                    INNER JOIN Course c1 ON c1.ID = sc.CourseID
+                                    INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
+                                    INNER JOIN CoursePrerequisite cs ON cs.CourseID = sc.CourseID
+                                    WHERE(sc.StudentID = '{student.ID}' AND (sc.isCompleted = 'False' OR sc.isCompleted IS NULL) AND c1.HasPrerequisite = 1) AND pc.isRequired = 'True' ");
                     using (var command = new SqlCommand(query3))
                     {
                         command.Connection = connection;
@@ -230,7 +250,7 @@ namespace DataAccessLayer
             }
             catch (Exception ex)
             {
-                return null;
+                return null;                
             }
             
         }
@@ -240,15 +260,31 @@ namespace DataAccessLayer
             var noPrereqCourses = new List<Course>();
             var completedCourses = new List<Course>();
             var coursesWithPrereq = new List<CoursePrerequisite>();
-
+            var student = new Student();
             try
             {
                 using (var connection = new SqlConnection(dBConfig.GetConnectionString()))
                 {
+                    string query = (@$"SELECT ID, Name, ProgramID FROM Student WHERE ID = {studentID}");
+                    using (var command = new SqlCommand(query))
+                    {
+                        command.Connection = connection;
+                        connection.Open();
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                student = new Student() { ID = reader.GetInt32(0), Name = reader.GetString(1), ProgramID = reader.GetString(2) };
+                            }
+                        }
+                        connection.Close();
+                    }
                     string query1 = (@$"SELECT sc.CourseID, c.Description
                                     FROM StudentCourse sc
-                                    INNER JOIN Course c ON c.ID = sc.CourseID
-                                    WHERE(sc.StudentID = '{studentID}' AND sc.isCompleted IS NULL AND c.HasPrerequisite = 'False' AND c.isRequired = 'False')");
+                                    INNER JOIN Course c ON c.ID = sc.CourseID                                 
+                                    INNER JOIN Student s ON s.ID = sc.StudentID
+									INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
+                                    WHERE(s.ID = '{student.ID}' AND sc.isCompleted IS NULL AND c.HasPrerequisite = 'False' AND pc.isRequired = 'False' AND pc.ProgramID = '{student.ProgramID}')");
                     using (var command = new SqlCommand(query1))
                     {
                         command.Connection = connection;
@@ -266,7 +302,7 @@ namespace DataAccessLayer
                     string query2 = (@$"SELECT sc.CourseID
                                     FROM StudentCourse sc
                                     INNER JOIN Course c ON c.ID = sc.CourseID
-                                    WHERE(sc.StudentID = '{studentID}' AND sc.isCompleted = 'True')");
+                                    WHERE(sc.StudentID = '{student.ID}' AND sc.isCompleted = 'True')");
                     using (var command = new SqlCommand(query2))
                     {
                         command.Connection = connection;
@@ -282,10 +318,11 @@ namespace DataAccessLayer
                         connection.Close();
                     }
                     string query3 = (@$"SELECT sc.CourseID, c1.Description, cs.PrerequisiteID, cs.PrerequisiteComposite
-                                FROM StudentCourse sc
-                                INNER JOIN Course c1 ON c1.ID = sc.CourseID
-                                INNER JOIN CoursePrerequisite cs ON cs.CourseID = sc.CourseID
-                                WHERE(sc.StudentID = '{studentID}' AND (sc.isCompleted = 'False' OR sc.isCompleted IS NULL) AND c1.HasPrerequisite = 1)");
+                                    FROM StudentCourse sc
+                                    INNER JOIN Course c1 ON c1.ID = sc.CourseID
+                                    INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
+                                    INNER JOIN CoursePrerequisite cs ON cs.CourseID = sc.CourseID
+                                    WHERE(sc.StudentID = '{student.ID}' AND (sc.isCompleted = 'False' OR sc.isCompleted IS NULL) AND c1.HasPrerequisite = 1) AND pc.isRequired = 'False'");
                     using (var command = new SqlCommand(query3))
                     {
                         command.Connection = connection;
@@ -355,9 +392,5 @@ namespace DataAccessLayer
             
         }
 
-        public List<Course> GetCourses(string CourseIDFilter)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

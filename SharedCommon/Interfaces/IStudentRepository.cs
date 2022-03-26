@@ -14,7 +14,7 @@ namespace SharedCommon.Interfaces
         public void Add(Student student);
         public void Update(Student student);
         public void Delete(string studentID);
-        List<Student> GetStudentsAllowedForCourse(string courseID);
+        List<Student> GetStudentsAllowedForCourse(string courseID, string progamID);
 
     }
 }
