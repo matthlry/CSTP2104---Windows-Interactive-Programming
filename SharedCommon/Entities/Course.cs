@@ -15,6 +15,7 @@ namespace SharedCommon.Entities
         public bool HasPrerequisite { get; set; }
         public bool isRequired { get; set; }
         public int Credits { get; set; }
-
+        public int Year { get; set; }
+        public int Term { get; set; }
     }
 }

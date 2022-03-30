@@ -12,5 +12,7 @@ namespace SharedCommon.Entities
         public string Description { get; set; }
         public string PrerequisiteID { get; set; }
         public string PrerequisiteComposite { get; set; }
-}
+        public int Year { get; set; }
+        public int Term { get; set; }
+    }
 }

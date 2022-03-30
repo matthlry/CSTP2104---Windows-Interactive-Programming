@@ -14,7 +14,7 @@ namespace SharedCommon.Interfaces
         List<StudentCourse> GetStudentCompletedCourses(string studentID);
         List<Course> GetCurrentCourses(string studentID);
         List<Course> GetStudentRecommendedElectives(string studentID);
-
+        List<Course> GetFilteredRecommendedCoursesByYearTerm(string id, int year, int term);
 
     }
 }

@@ -142,11 +142,12 @@ namespace DataAccessLayer
                         }
                         connection.Close();
                     }
-                    string query1 = (@$"SELECT sc.CourseID, c.Description
+                    string query1 = (@$"SELECT sc.CourseID, c.Description, year(sm.Year) as Year, sm.Term
                                     FROM StudentCourse sc
                                     INNER JOIN Course c ON c.ID = sc.CourseID                                 
                                     INNER JOIN Student s ON s.ID = sc.StudentID
 									INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
+                                    INNER JOIN Semester sm ON sm.ID = pc.SemesterID
                                     WHERE(s.ID = '{student.ID}' AND sc.isCompleted IS NULL AND c.HasPrerequisite = 'False' AND pc.isRequired = 'True' AND pc.ProgramID = '{student.ProgramID}')");
                     using (var command = new SqlCommand(query1))
                     {
@@ -156,7 +157,7 @@ namespace DataAccessLayer
                         {
                             while (reader.Read())
                             {
-                                var course = new Course() { ID = reader.GetString(0), Description = reader.GetString(1) };
+                                var course = new Course() { ID = reader.GetString(0), Description = reader.GetString(1), Year = reader.GetInt32(2), Term = reader.GetInt32(3) };
                                 noPrereqCourses.Add(course);
                             }
                         }
@@ -180,11 +181,12 @@ namespace DataAccessLayer
                         }
                         connection.Close();
                     }
-                    string query3 = (@$"SELECT sc.CourseID, c1.Description, cs.PrerequisiteID, cs.PrerequisiteComposite
+                    string query3 = (@$"SELECT sc.CourseID, c1.Description, cs.PrerequisiteID, cs.PrerequisiteComposite, year(sm.Year) as Year, sm.Term
                                     FROM StudentCourse sc
                                     INNER JOIN Course c1 ON c1.ID = sc.CourseID
                                     INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
                                     INNER JOIN CoursePrerequisite cs ON cs.CourseID = sc.CourseID
+                                    INNER JOIN Semester sm ON sm.ID = pc.SemesterID
                                     WHERE(sc.StudentID = '{student.ID}' AND (sc.isCompleted = 'False' OR sc.isCompleted IS NULL) AND c1.HasPrerequisite = 1) AND pc.isRequired = 'True' ");
                     using (var command = new SqlCommand(query3))
                     {
@@ -194,7 +196,7 @@ namespace DataAccessLayer
                         {
                             while (reader.Read())
                             {
-                                var course = new CoursePrerequisite() { CourseID = reader.GetString(0), Description = reader.GetString(1), PrerequisiteID = reader.GetString(2), PrerequisiteComposite = reader.GetSqlValue(3).ToString() };
+                                var course = new CoursePrerequisite() { CourseID = reader.GetString(0), Description = reader.GetString(1), PrerequisiteID = reader.GetString(2), PrerequisiteComposite = reader.GetSqlValue(3).ToString(), Year = reader.GetInt32(4), Term = reader.GetInt32(5) };
                                 coursesWithPrereq.Add(course);
                             }
                         }
@@ -215,7 +217,7 @@ namespace DataAccessLayer
                             {
                                 continue;
                             }
-                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description };
+                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description, Year = cp.Year, Term = cp.Term };
                             noPrereqCourses.Add(cs);
                         }
                     }
@@ -223,7 +225,7 @@ namespace DataAccessLayer
                     {
                         if (completedCourses.Exists(x => x.ID == cp.PrerequisiteID))
                         {
-                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description };
+                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description, Year = cp.Year, Term = cp.Term };
                             if (andCoursesHolder.Any() || andCoursesHolder.Exists(x => x.ID == cp.CourseID))
                             {
                                 noPrereqCourses.Add(cs);
@@ -239,7 +241,7 @@ namespace DataAccessLayer
                     {
                         if (completedCourses.Exists(x => x.ID == cp.PrerequisiteID))
                         {
-                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description };
+                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description, Year = cp.Year, Term = cp.Term };
                             noPrereqCourses.Add(cs);
                             continue;
                         }
@@ -279,11 +281,12 @@ namespace DataAccessLayer
                         }
                         connection.Close();
                     }
-                    string query1 = (@$"SELECT sc.CourseID, c.Description
+                    string query1 = (@$"SELECT sc.CourseID, c.Description, year(sm.Year) as Year, sm.Term
                                     FROM StudentCourse sc
                                     INNER JOIN Course c ON c.ID = sc.CourseID                                 
                                     INNER JOIN Student s ON s.ID = sc.StudentID
 									INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
+                                    INNER JOIN Semester sm ON sm.ID = pc.SemesterID
                                     WHERE(s.ID = '{student.ID}' AND sc.isCompleted IS NULL AND c.HasPrerequisite = 'False' AND pc.isRequired = 'False' AND pc.ProgramID = '{student.ProgramID}')");
                     using (var command = new SqlCommand(query1))
                     {
@@ -293,7 +296,7 @@ namespace DataAccessLayer
                         {
                             while (reader.Read())
                             {
-                                var course = new Course() { ID = reader.GetString(0), Description = reader.GetString(1) };
+                                var course = new Course() { ID = reader.GetString(0), Description = reader.GetString(1), Year = reader.GetInt32(2), Term = reader.GetInt32(3) };
                                 noPrereqCourses.Add(course);
                             }
                         }
@@ -317,11 +320,12 @@ namespace DataAccessLayer
                         }
                         connection.Close();
                     }
-                    string query3 = (@$"SELECT sc.CourseID, c1.Description, cs.PrerequisiteID, cs.PrerequisiteComposite
+                    string query3 = (@$"SELECT sc.CourseID, c1.Description, cs.PrerequisiteID, cs.PrerequisiteComposite, year(sm.Year) as Year, sm.Term
                                     FROM StudentCourse sc
                                     INNER JOIN Course c1 ON c1.ID = sc.CourseID
                                     INNER JOIN ProgramCourse pc ON pc.CourseID = sc.CourseID
                                     INNER JOIN CoursePrerequisite cs ON cs.CourseID = sc.CourseID
+                                    INNER JOIN Semester sm ON sm.ID = pc.SemesterID
                                     WHERE(sc.StudentID = '{student.ID}' AND (sc.isCompleted = 'False' OR sc.isCompleted IS NULL) AND c1.HasPrerequisite = 1) AND pc.isRequired = 'False'");
                     using (var command = new SqlCommand(query3))
                     {
@@ -331,7 +335,7 @@ namespace DataAccessLayer
                         {
                             while (reader.Read())
                             {
-                                var course = new CoursePrerequisite() { CourseID = reader.GetString(0), Description = reader.GetString(1), PrerequisiteID = reader.GetString(2), PrerequisiteComposite = reader.GetSqlValue(3).ToString() };
+                                var course = new CoursePrerequisite() { CourseID = reader.GetString(0), Description = reader.GetString(1), PrerequisiteID = reader.GetString(2), PrerequisiteComposite = reader.GetSqlValue(3).ToString(), Year = reader.GetInt32(4), Term = reader.GetInt32(5) };
                                 coursesWithPrereq.Add(course);
                             }
                         }
@@ -352,7 +356,7 @@ namespace DataAccessLayer
                             {
                                 continue;
                             }
-                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description };
+                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description, Year = cp.Year, Term = cp.Term };
                             noPrereqCourses.Add(cs);
                         }
                     }
@@ -360,7 +364,7 @@ namespace DataAccessLayer
                     {
                         if (completedCourses.Exists(x => x.ID == cp.PrerequisiteID))
                         {
-                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description };
+                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description, Year = cp.Year, Term = cp.Term };
                             if (andCoursesHolder.Any() || andCoursesHolder.Exists(x => x.ID == cp.CourseID))
                             {
                                 noPrereqCourses.Add(cs);
@@ -376,7 +380,7 @@ namespace DataAccessLayer
                     {
                         if (completedCourses.Exists(x => x.ID == cp.PrerequisiteID))
                         {
-                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description };
+                            Course cs = new Course() { ID = cp.CourseID, Description = cp.Description, Year = cp.Year, Term = cp.Term };
                             noPrereqCourses.Add(cs);
                             continue;
                         }
@@ -387,10 +391,23 @@ namespace DataAccessLayer
             }
             catch (Exception ex)
             {
+                //Console.WriteLine($"{ex.Message}");
                 return null;
-            }
-            
+            }           
         }
 
+        public List<Course> GetFilteredRecommendedCoursesByYearTerm(string id, int year, int term)
+        {
+            try
+            {
+                List<Course> courses = GetStudentRecommendedCourses(id);
+                List<Course> filteredCourses = courses.Where(x => x.Year == year && x.Term == term).ToList();
+                return filteredCourses;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

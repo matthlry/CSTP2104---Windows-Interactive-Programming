@@ -34,7 +34,7 @@ namespace DataAccessLayer
 
             foreach(Course course in c)
             {
-                Console.WriteLine($"{course.ID} {course.Description}");
+                Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
             }
         }
 
@@ -44,7 +44,16 @@ namespace DataAccessLayer
 
             foreach (Course course in c)
             {
-                Console.WriteLine($"{course.ID} {course.Description}");
+                Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
+            }
+        }
+        public static void GetFilteredRecommendation(string id, int year, int term)
+        {
+            List<Course> c = cr.GetFilteredRecommendedCoursesByYearTerm(id, year, term);
+
+            foreach (Course course in c)
+            {
+                Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
             }
         }
 
