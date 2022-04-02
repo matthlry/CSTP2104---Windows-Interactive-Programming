@@ -12,6 +12,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using BusinessLogic;
+using SharedCommon.Interfaces;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -23,9 +25,11 @@ namespace CourseEnroll
     /// </summary>
     public sealed partial class MainWindow : Window
     {
+        private readonly IStudentRepository studentRepository;
+        private readonly ICourseRepository courseRepository;
         public MainWindow()
         {
-            this.InitializeComponent();
+            this.InitializeComponent();            
         }
 
         private void myButton_Click(object sender, RoutedEventArgs e)
@@ -33,7 +37,20 @@ namespace CourseEnroll
             //myButton.Content = "Clicked";
         }
 
-        private void studentFilter_KeyDown(object sender, KeyRoutedEventArgs e)
+        private void getStudents_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            //string student = studentFilter.GetValue();
+            //BusinessLogic.StudentManager manager = new StudentManager(studentRepository, courseRepository);
+            //studentList.ItemsSource = manager.GetRegisteredStudents();
+            
+        }
+
+        private void courseSearchButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void studentList_ItemClick(object sender, ItemClickEventArgs e)
         {
 
         }

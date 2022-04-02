@@ -9,23 +9,23 @@
 
     <!-- <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"> -->
     <!-- <Button x:Name="myButton" Click="myButton_Click">Click Me</Button> -->
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="10*"/>
-            </Grid.RowDefinitions>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <Border Background="DarkCyan" Grid.ColumnSpan="2" Grid.Row="0"/>
-        <Border Background="DarkRed" Grid.Column="0" Grid.Row="1"/>
-        <Border Background="DarkGreen" Grid.Column="1" Grid.Row="1"/>
+        <Border Background="#2f6a87" Grid.ColumnSpan="2" Grid.Row="0"/>
+        <Border Background="#6eb2cc" Grid.Column="0" Grid.Row="1" BorderThickness="4"/>
+        <Border Background="#6eb2cc" Grid.Column="1" Grid.Row="1"/>
 
         <StackPanel Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock FontSize="50" Text="Logo"/>
+            <TextBlock FontSize="50" Text="Course Recommendation"/>
         </StackPanel>
-        
+
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -34,27 +34,15 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <StackPanel Grid.Row="0" VerticalAlignment="Top">
                 <TextBlock HorizontalAlignment="Center" FontSize="30" Text="Students" TextWrapping="Wrap"/>
-                <TextBox x:ConnectionId='9' x:Name="studentFilter" Margin="10, 0, 10, 0"  PlaceholderText="Student Name or ID"/> <!-- Keydown="function_name" for Enter Key Event Handler -->
+                <TextBox x:ConnectionId='9' x:Name="studentFilter" Margin="10, 0, 10, 0"  PlaceholderText="Student Name or ID"                              />
+                <!-- KeyDown="function_name" for Enter Key Event Handler -->
             </StackPanel>
-            <ListView x:ConnectionId='8' x:Name="studentList" Grid.Row="1" HorizontalAlignment="Stretch" Margin="0, 15, 0, 0" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible">
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
-                <ListViewItem>asd</ListViewItem>
+            <ListView x:ConnectionId='8' x:Name="studentList" Grid.Row="1" HorizontalAlignment="Stretch" Margin="0, 15, 0, 0" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible" IsItemClickEnabled="True"                                   >
+                <ListView.ItemTemplate></ListView.ItemTemplate>
+                <ListViewItem>Student ID and Name HERE</ListViewItem>
             </ListView>
         </Grid>
 
@@ -67,27 +55,28 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Row="0" VerticalAlignment="Top">
-                <TextBlock HorizontalAlignment="Center" FontSize="25" Text="Semester Course Availability for Students" TextWrapping="WrapWholeWords"/>
-                <TextBlock x:ConnectionId='2' x:Name="studentName" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="20" Text="Student Name:" TextWrapping="WrapWholeWords"/>
-                <TextBlock x:ConnectionId='3' x:Name="studentID" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="20" Text="Student ID: " TextWrapping="WrapWholeWords"/>
-                <TextBlock x:ConnectionId='4' x:Name="studentProgram" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="20" Text="Student Program: " TextWrapping="WrapWholeWords"/>
-                <StackPanel  Margin="10, 10, 10, 10" Orientation="Horizontal">
-                    <ComboBox x:ConnectionId='5' Header="Year" x:Name="year" Margin="0, 0, 40, 0" PlaceholderText="Course Year">
-                        <ComboBoxItem>Year 1</ComboBoxItem>
-                        <ComboBoxItem>Year 2</ComboBoxItem>
-                        <ComboBoxItem>Year 3</ComboBoxItem>
-                    </ComboBox>
-                    <ComboBox x:ConnectionId='6' Header="Term" x:Name="term" Margin="0, 0, 40, 0" PlaceholderText="Course Term">
-                        <ComboBoxItem>Term 1</ComboBoxItem>
-                        <ComboBoxItem>Term 2</ComboBoxItem>
-                        <ComboBoxItem>Term 3</ComboBoxItem>
-                    </ComboBox>
-                    <Button x:ConnectionId='7' x:Name="courseSearchButton" Margin="0, 23, 0, 0">Search</Button>
-                    <!-- Click="function_name" for On Click Event Handler -->
+            <Border BorderBrush="Black" BorderThickness="0, 4, 0, 1">
+                <StackPanel Grid.Row="0" VerticalAlignment="Top">
+                    <TextBlock HorizontalAlignment="Center" FontSize="25" Text="Student Information" TextWrapping="WrapWholeWords"/>
+                    <TextBlock x:ConnectionId='2' x:Name="studentName" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="18" Text="Student Name:" TextWrapping="WrapWholeWords"/>
+                    <TextBlock x:ConnectionId='3' x:Name="studentID" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="18" Text="Student ID: " TextWrapping="WrapWholeWords"/>
+                    <TextBlock x:ConnectionId='4' x:Name="studentProgram" Margin="10, 0, 10, 0"  HorizontalAlignment="Left" FontSize="18" Text="Student Program: " TextWrapping="WrapWholeWords"/>
+                    <StackPanel  Margin="10, 10, 10, 10" Orientation="Horizontal">
+                        <ComboBox x:ConnectionId='5' Header="Year" x:Name="year" Margin="0, 0, 40, 0" PlaceholderText="Course Year">
+                            <ComboBoxItem>2022</ComboBoxItem>
+                            <ComboBoxItem>2023</ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox x:ConnectionId='6' Header="Term" x:Name="term" Margin="0, 0, 40, 0" PlaceholderText="Course Term">
+                            <ComboBoxItem>Term 1</ComboBoxItem>
+                            <ComboBoxItem>Term 2</ComboBoxItem>
+                            <ComboBoxItem>Term 3</ComboBoxItem>
+                        </ComboBox>
+                        <Button x:ConnectionId='7' x:Name="courseSearchButton" Margin="0, 23, 0, 0"                                  Background="#CE5100">Search</Button>
+                        <!-- Click="function_name" for On Click Event Handler -->
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
-            <ScrollViewer Grid.Row="1"  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            </Border>
+            <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
                 <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -102,8 +91,8 @@
                             <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
                             <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Availability" TextWrapping="WrapWholeWords"/>
                         </StackPanel>
-                        <ListView>
-
+                        <ListView SelectionMode="None">
+                            <ListViewItem>Courses HERE</ListViewItem>
                         </ListView>
 
                         <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Currently Taking" TextWrapping="WrapWholeWords"/>
@@ -112,8 +101,8 @@
                             <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
                             <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Availability" TextWrapping="WrapWholeWords"/>
                         </StackPanel>
-                        <ListView>
-
+                        <ListView SelectionMode="None">
+                            <ListViewItem>Courses HERE</ListViewItem>
                         </ListView>
 
                         <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Taken" TextWrapping="WrapWholeWords"/>
@@ -122,8 +111,8 @@
                             <TextBlock Margin="0, 0, 100, 0" HorizontalAlignment="Left" FontSize="20" Text="Course Description" TextWrapping="WrapWholeWords"/>
                             <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Grades" TextWrapping="WrapWholeWords"/>
                         </StackPanel>
-                        <ListView>
-
+                        <ListView SelectionMode="None">
+                            <ListViewItem>Courses HERE</ListViewItem>
                         </ListView>
                     </StackPanel>
                 </Grid>

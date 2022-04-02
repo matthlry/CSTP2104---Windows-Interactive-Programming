@@ -16,4 +16,9 @@
     <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.6" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessLogic\BusinessLogic.csproj" />
+    <ProjectReference Include="..\..\SharedCommon\SharedCommon.csproj" />
+  </ItemGroup>
 </Project>

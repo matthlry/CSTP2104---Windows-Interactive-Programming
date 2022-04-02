@@ -30,17 +30,17 @@
     <AppXManifest Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll %28Package%29\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-12T18:32:24.733</Modified>
+      <Modified>2022-04-02T19:15:49.163</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-03-05T23:01:52.040</Modified>
+      <Modified>2022-04-02T19:15:47.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>MainWindow.xbf</PackagePath>
-      <Modified>2022-03-12T18:32:23.157</Modified>
+      <Modified>2022-04-02T19:15:47.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\Redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -82,7 +82,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll %28Package%29\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-26T20:29:19.197</Modified>
+      <Modified>2022-04-02T19:15:49.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Graham\.nuget\packages\microsoft.projectreunion.foundation\0.8.6\lib\net5.0-windows\Microsoft.ApplicationModel.Resources.Projection.dll">
       <PackagePath>CourseEnroll\Microsoft.ApplicationModel.Resources.Projection.dll</PackagePath>
@@ -100,33 +100,41 @@
       <PackagePath>CourseEnroll\WinRT.Runtime.dll</PackagePath>
       <Modified>2022-02-08T08:02:46.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\BusinessLogic\bin\Debug\net5.0\BusinessLogic.dll">
+      <PackagePath>CourseEnroll\BusinessLogic.dll</PackagePath>
+      <Modified>2022-03-30T05:48:20.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\SharedCommon\bin\Debug\net5.0\SharedCommon.dll">
+      <PackagePath>CourseEnroll\SharedCommon.dll</PackagePath>
+      <Modified>2022-03-30T05:48:19.830</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.deps.json">
       <PackagePath>CourseEnroll\CourseEnroll.deps.json</PackagePath>
-      <Modified>2022-03-12T18:32:23.961</Modified>
+      <Modified>2022-04-02T19:15:48.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.runtimeconfig.dev.json">
       <PackagePath>CourseEnroll\CourseEnroll.runtimeconfig.dev.json</PackagePath>
-      <Modified>2022-03-12T18:32:23.980</Modified>
+      <Modified>2022-04-02T19:15:48.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\App.xbf">
       <PackagePath>CourseEnroll\App.xbf</PackagePath>
-      <Modified>2022-03-05T23:01:52.040</Modified>
+      <Modified>2022-04-02T19:15:47.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>CourseEnroll\MainWindow.xbf</PackagePath>
-      <Modified>2022-03-12T18:32:23.157</Modified>
+      <Modified>2022-04-02T19:15:47.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>CourseEnroll\CourseEnroll.exe</PackagePath>
-      <Modified>2022-03-12T18:32:23.617</Modified>
+      <Modified>2022-04-02T19:15:47.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.runtimeconfig.json">
       <PackagePath>CourseEnroll\CourseEnroll.runtimeconfig.json</PackagePath>
-      <Modified>2022-03-12T18:32:23.979</Modified>
+      <Modified>2022-04-02T19:15:48.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\CourseEnroll.dll">
       <PackagePath>CourseEnroll\CourseEnroll.dll</PackagePath>
-      <Modified>2022-03-12T18:32:23.600</Modified>
+      <Modified>2022-04-02T19:15:47.716</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

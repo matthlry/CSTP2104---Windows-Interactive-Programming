@@ -53,6 +53,29 @@
           "buildTransitive/Microsoft.ProjectReunion.WinUI.props": {},
           "buildTransitive/Microsoft.ProjectReunion.WinUI.targets": {}
         }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SharedCommon": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
+      "SharedCommon/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SharedCommon.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedCommon.dll": {}
+        }
       }
     },
     "net5.0-windows10.0.19041/win10-arm64": {
@@ -106,6 +129,29 @@
         "build": {
           "buildTransitive/Microsoft.ProjectReunion.WinUI.props": {},
           "buildTransitive/Microsoft.ProjectReunion.WinUI.targets": {}
+        }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SharedCommon": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
+      "SharedCommon/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SharedCommon.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedCommon.dll": {}
         }
       }
     },
@@ -161,6 +207,29 @@
           "buildTransitive/Microsoft.ProjectReunion.WinUI.props": {},
           "buildTransitive/Microsoft.ProjectReunion.WinUI.targets": {}
         }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SharedCommon": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
+      "SharedCommon/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SharedCommon.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedCommon.dll": {}
+        }
       }
     },
     "net5.0-windows10.0.19041/win10-x86": {
@@ -214,6 +283,29 @@
         "build": {
           "buildTransitive/Microsoft.ProjectReunion.WinUI.props": {},
           "buildTransitive/Microsoft.ProjectReunion.WinUI.targets": {}
+        }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SharedCommon": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
+      "SharedCommon/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SharedCommon.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedCommon.dll": {}
         }
       }
     }
@@ -519,13 +611,25 @@
         "tools/x64/GenXbf.dll",
         "tools/x86/GenXbf.dll"
       ]
+    },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../../BusinessLogic/BusinessLogic.csproj",
+      "msbuildProject": "../../BusinessLogic/BusinessLogic.csproj"
+    },
+    "SharedCommon/1.0.0": {
+      "type": "project",
+      "path": "../../SharedCommon/SharedCommon.csproj",
+      "msbuildProject": "../../SharedCommon/SharedCommon.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows10.0.19041": [
+      "BusinessLogic >= 1.0.0",
       "Microsoft.ProjectReunion >= 0.8.6",
       "Microsoft.ProjectReunion.Foundation >= 0.8.6",
-      "Microsoft.ProjectReunion.WinUI >= 0.8.6"
+      "Microsoft.ProjectReunion.WinUI >= 0.8.6",
+      "SharedCommon >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -559,7 +663,14 @@
       "frameworks": {
         "net5.0-windows10.0.19041": {
           "targetAlias": "net5.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\BusinessLogic\\BusinessLogic.csproj"
+            },
+            "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj": {
+              "projectPath": "D:\\CSTP 2104 Windows Interactive Programming\\CSTP2104---Windows-Interactive-Programming\\SharedCommon\\SharedCommon.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

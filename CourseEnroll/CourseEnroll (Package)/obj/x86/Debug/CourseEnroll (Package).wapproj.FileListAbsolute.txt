@@ -36,3 +36,7 @@ D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Prog
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\ProjectArchitectures.txt
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\obj\x86\Debug\CourseEnroll (Package).wapproj.LastBuild.txt
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\BusinessLogic.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\SharedCommon.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\BusinessLogic.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll (Package)\bin\x86\Debug\CourseEnroll\SharedCommon.pdb

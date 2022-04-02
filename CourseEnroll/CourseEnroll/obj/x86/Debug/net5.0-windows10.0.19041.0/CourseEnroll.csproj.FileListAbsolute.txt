@@ -47,3 +47,7 @@ D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Prog
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\qualifiers.txt
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\qualifiers.txt.intermediate
 D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\obj\x86\Debug\net5.0-windows10.0.19041.0\MultipleQualifiersPerDimensionFound.txt
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\BusinessLogic.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\SharedCommon.dll
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\BusinessLogic.pdb
+D:\CSTP 2104 Windows Interactive Programming\CSTP2104---Windows-Interactive-Programming\CourseEnroll\CourseEnroll\bin\x86\Debug\net5.0-windows10.0.19041.0\SharedCommon.pdb

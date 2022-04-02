@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v5.0": {
       "CourseEnroll/1.0.0": {
         "dependencies": {
+          "BusinessLogic": "1.0.0",
           "Microsoft.ProjectReunion": "0.8.6",
           "Microsoft.ProjectReunion.Foundation": "0.8.6",
           "Microsoft.ProjectReunion.WinUI": "0.8.6",
+          "SharedCommon": "1.0.0",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.23"
         },
         "runtime": {
@@ -53,6 +55,19 @@
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.0.2112"
           }
+        }
+      },
+      "BusinessLogic/1.0.0": {
+        "dependencies": {
+          "SharedCommon": "1.0.0"
+        },
+        "runtime": {
+          "BusinessLogic.dll": {}
+        }
+      },
+      "SharedCommon/1.0.0": {
+        "runtime": {
+          "SharedCommon.dll": {}
         }
       }
     }
@@ -102,6 +117,16 @@
       "sha512": "sha512-/rZgiPXLsnK/nLpHYA1goHVmANIHhVOM9+6g9GKnXVHFFvjWM4TppWBCz80HgK+epqH7p0NOWjJTgGZPd8JOIA==",
       "path": "microsoft.projectreunion.winui/0.8.6",
       "hashPath": "microsoft.projectreunion.winui.0.8.6.nupkg.sha512"
+    },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharedCommon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
