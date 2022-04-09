@@ -41,7 +41,8 @@
                 <!-- KeyDown="function_name" for Enter Key Event Handler -->
             </StackPanel>
             <ListView x:ConnectionId='8' x:Name="studentList" Grid.Row="1" HorizontalAlignment="Stretch" Margin="0, 15, 0, 0" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible" IsItemClickEnabled="True"                                   >
-                <ListView.ItemTemplate></ListView.ItemTemplate>
+                <ListViewItem>Student ID and Name HERE</ListViewItem>
+                <ListViewItem>Student ID and Name HERE</ListViewItem>
                 <ListViewItem>Student ID and Name HERE</ListViewItem>
             </ListView>
         </Grid>
@@ -93,6 +94,8 @@
                         </StackPanel>
                         <ListView SelectionMode="None">
                             <ListViewItem>Courses HERE</ListViewItem>
+                            <ListViewItem>Courses HERE</ListViewItem>
+                            <ListViewItem>Courses HERE</ListViewItem>
                         </ListView>
 
                         <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Currently Taking" TextWrapping="WrapWholeWords"/>
@@ -103,6 +106,7 @@
                         </StackPanel>
                         <ListView SelectionMode="None">
                             <ListViewItem>Courses HERE</ListViewItem>
+                            <ListViewItem>Courses HERE</ListViewItem>
                         </ListView>
 
                         <TextBlock Margin="0, 40, 0, 0" HorizontalAlignment="Center" FontSize="25" Text="Courses Taken" TextWrapping="WrapWholeWords"/>
@@ -112,6 +116,7 @@
                             <TextBlock Margin="0, 0, 50, 0" HorizontalAlignment="Left" FontSize="20" Text="Grades" TextWrapping="WrapWholeWords"/>
                         </StackPanel>
                         <ListView SelectionMode="None">
+                            <ListViewItem>Courses HERE</ListViewItem>
                             <ListViewItem>Courses HERE</ListViewItem>
                         </ListView>
                     </StackPanel>

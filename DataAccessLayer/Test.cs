@@ -18,7 +18,7 @@ namespace DataAccessLayer
             Console.WriteLine($"{theStudent.Name} {theStudent.ID.ToString()} {theStudent.ProgramID}");
         }
 
-        public static void GetCompletedStudent(string id)
+        public static void GetCompletedStudentCourses(string id)
         {
             List<StudentCourse> sc = cr.GetStudentCompletedCourses(id);
 
@@ -29,7 +29,22 @@ namespace DataAccessLayer
                 }
                 return;
             }
-            Console.WriteLine("Student Not Found");
+            Console.WriteLine("No Completed Courses");
+        }
+
+        public static void GetCurrentStudentCourses(string id)
+        {
+            List<Course> c = cr.GetCurrentCourses(id);
+
+            if (c.Any())
+            {
+                foreach (Course course in c)
+                {
+                    Console.WriteLine($"{course.ID}, {course.Description}");
+                }
+                return;
+            }
+            Console.WriteLine("No Current Courses");
         }
 
         public static void GetRecommendation(string id)
@@ -47,7 +62,7 @@ namespace DataAccessLayer
             Console.WriteLine("Student Not Found");
         }
 
-       public static void GetRecommendationelectives(string id)
+       public static void GetRecommendationElectives(string id)
         {
             List<Course> c = cr.GetStudentRecommendedElectives(id);
 
@@ -76,7 +91,7 @@ namespace DataAccessLayer
             Console.WriteLine("Student Not Found");
         }
 
-        public static void GetStudentsAllowed(string courseID, string programID)
+        public static void GetStudentsAllowedInACourse(string courseID, string programID)
         {
             List<Student> s = st.GetStudentsAllowedForCourse(courseID, programID);
             if (s.Any())
