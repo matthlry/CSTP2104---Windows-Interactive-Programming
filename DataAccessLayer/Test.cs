@@ -89,5 +89,16 @@ namespace DataAccessLayer
             }            
             Console.WriteLine("Course Not Found");
         }
+
+        public static void AddStudentToProgram(Student student)
+        {
+            bool success = st.Add(student);
+            if (success)
+            {
+                Console.WriteLine("Successfuly Added the Student");
+                return;
+            }
+            Console.WriteLine("Cannot Add Student");
+        }
     }
 }

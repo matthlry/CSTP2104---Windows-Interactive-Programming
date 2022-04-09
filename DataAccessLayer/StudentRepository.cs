@@ -186,18 +186,40 @@ namespace DataAccessLayer
             }
             return studentsList;
         }
-        public void Add(Student student)
+        public bool Add(Student student)
         {
-            using (var connection = new SqlConnection(dBConfig.GetConnectionString()))
+            try
             {
-                string sqlQuery = ($"INSERT INTO STUDENT VALUES ({student.ID}, {student.Name}, {student.ProgramID}");
-                using (var command = new SqlCommand(sqlQuery))
-                {
-                    command.Connection = connection;
-                    connection.Open();
-                    command.ExecuteNonQuery();
+                using(var connection = new SqlConnection(dBConfig.GetConnectionString()))
+            {
+                    string sqlQuery = (@$"INSERT INTO Student VALUES ('{student.ID}', '{student.Name}', '{student.ProgramID}')");
+                    using (var command = new SqlCommand(sqlQuery))
+                    {
+                        command.Connection = connection;
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                    }                   
+                    string sqlQuery2 = ($@"INSERT INTO StudentCourse (StudentID, CourseID)
+                                        SELECT s.ID, pc.CourseID
+                                        FROM Student s 
+                                        INNER JOIN ProgramCourse pc ON pc.ProgramID = s.ProgramID
+                                        WHERE s.ID = '{student.ID}';");
+                    using (var command = new SqlCommand(sqlQuery2))
+                    {
+                        command.Connection = connection;
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                    }
                 }
+                return true;
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Unable to add. {ex.Message}");
+                return false;
+            }
+            
         }
         public void Update(Student student)
         {

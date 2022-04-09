@@ -89,5 +89,16 @@ namespace BusinessLogic
             studentCourses = new List<StudentCourse>();
             return studentCourses;
         }
+
+        public void AddStudentToProgram(Student student)
+        {
+            bool success = this.studentRepository.Add(student);
+            if (success)
+            {
+                Console.WriteLine("Successfuly Added the Student");
+                return;
+            }
+            Console.WriteLine("Cannot Add Student");
+        }
     }
 }
