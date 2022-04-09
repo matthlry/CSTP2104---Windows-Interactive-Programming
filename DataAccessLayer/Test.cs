@@ -22,48 +22,72 @@ namespace DataAccessLayer
         {
             List<StudentCourse> sc = cr.GetStudentCompletedCourses(id);
 
-            foreach(StudentCourse course in sc)
-            {
-                Console.WriteLine($"{course.CourseID}, {course.Description}, {course.Grade}");
+            if (sc.Any()) {
+                foreach (StudentCourse course in sc)
+                {
+                    Console.WriteLine($"{course.CourseID}, {course.Description}, {course.Grade}");
+                }
+                return;
             }
+            Console.WriteLine("Student Not Found");
         }
 
         public static void GetRecommendation(string id)
         {
             List<Course> c = cr.GetStudentRecommendedCourses(id);
 
-            foreach(Course course in c)
+            if (c.Any())
             {
-                Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
+                foreach (Course course in c)
+                {
+                    Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
+                }
+                return;
             }
+            Console.WriteLine("Student Not Found");
         }
 
        public static void GetRecommendationelectives(string id)
         {
             List<Course> c = cr.GetStudentRecommendedElectives(id);
 
-            foreach (Course course in c)
+            if(c.Any())
             {
-                Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
+                foreach (Course course in c)
+                {
+                    Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
+                }
+                return;
             }
+            Console.WriteLine("Student Not Found");
         }
         public static void GetFilteredRecommendation(string id, int year, int term)
         {
             List<Course> c = cr.GetFilteredRecommendedCoursesByYearTerm(id, year, term);
 
-            foreach (Course course in c)
+            if (c.Any())
             {
-                Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
+                foreach (Course course in c)
+                {
+                    Console.WriteLine($"{course.ID} {course.Description} {course.Year} {course.Term}");
+                }
+                return;
             }
+            Console.WriteLine("Student Not Found");
         }
 
         public static void GetStudentsAllowed(string courseID, string programID)
         {
             List<Student> s = st.GetStudentsAllowedForCourse(courseID, programID);
-            foreach (Student student in s)
+            if (s.Any())
             {
-                Console.WriteLine($"{student.Name} {student.ID}");
-            }
+                foreach (Student student in s)
+                {
+                    Console.WriteLine($"{student.Name} {student.ID}");
+                }
+                return;
+            }            
+            Console.WriteLine("Course Not Found");
         }
     }
 }
