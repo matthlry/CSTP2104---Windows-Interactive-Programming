@@ -29,7 +29,7 @@ namespace BusinessLogic
             students = new List<Student>();
             return students;
         }
-        public List<Student> GetAllowedStudentsInACourse(string courseID, string programID)
+        public List<Student> GetStudentsAllowedInACourse(string courseID, string programID)
         {
             List<Student> students;
             students = this.studentRepository.GetStudentsAllowedForCourse(courseID, programID);
